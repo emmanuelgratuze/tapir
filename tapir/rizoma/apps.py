@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 from tapir.core.config import sidebar_link_groups
-from django.utils.translation import gettext_lazy as _
+from django.utils.translation import gettext as _
 from django.urls import reverse_lazy
 from tapir.settings import PERMISSION_COOP_ADMIN
 
@@ -19,7 +19,7 @@ class RizomaConfig(AppConfig):
         admin_group.add_link(
             display_name=_("All shifts"),
             material_icon="calendar_today",
-            url=reverse_lazy("shifts:calendar"),
+            url=reverse_lazy("rizoma:all_shifts"),
             ordering=1,
             required_permissions=[PERMISSION_COOP_ADMIN],
         )

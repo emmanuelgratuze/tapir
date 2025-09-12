@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-28 12:56+0200\n"
+"POT-Creation-Date: 2025-09-12 10:41+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,6 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
 #: accounts/emails/create_account_reminder_email.py:20
 msgid "Create account reminder"
 msgstr "Lembrete de criação de conta"
@@ -297,7 +298,7 @@ msgstr "Editar nome de utilizador"
 #: core/templates/core/featureflag_list.html:30
 #: shifts/templates/shifts/shift_detail.html:44
 #: shifts/templates/shifts/shift_template_detail.html:25
-#: shifts/templates/shifts/shift_template_detail.html:113
+#: shifts/templates/shifts/shift_template_detail.html:116
 #: shifts/templates/shifts/user_shifts_overview_tag.html:14
 msgid "Edit"
 msgstr "Editar"
@@ -1052,7 +1053,7 @@ msgstr "Criar candidato"
 #: shifts/templates/shifts/register_user_to_shift_slot.html:27
 #: shifts/templates/shifts/register_user_to_shift_slot_template.html:26
 #: shifts/templates/shifts/shift_detail.html:226
-#: shifts/templates/shifts/shift_template_detail.html:84
+#: shifts/templates/shifts/shift_template_detail.html:87
 msgid "Register"
 msgstr "Registar"
 
@@ -1345,7 +1346,7 @@ msgid ""
 "            updated. You may change working groups as needed.\n"
 "        </p>\n"
 "        <p>\n"
-"            You also have opportunities to get involved at SuperCoop in addition to your regular shift. To make it as easy\n" 
+"            You also have opportunities to get involved at SuperCoop in addition to your regular shift. To make it as easy\n"
 "            as\n"
 "            possible for you to get started, we have summarized all <a href=\"https://wiki.supercoop.de/wiki/Working_Groups\">additional\n"
 "            working groups</a> in the wiki. Please see the Wiki for further information on how to get involved.\n"
@@ -2012,7 +2013,7 @@ msgid "Share owner"
 msgstr "Proprietário da ação"
 
 #: coop/templates/coop/membershipresignation_detail.html:61
-#: shifts/models.py:547
+#: shifts/models.py:552
 msgid "Cancellation reason"
 msgstr "Motivo da rescisão"
 
@@ -2247,14 +2248,14 @@ msgstr ""
 "                        "
 
 #: coop/templates/coop/tags/user_coop_share_ownership_list_tag.html:56
-#: shifts/models.py:941 shifts/templates/shifts/shift_day_printable.html:56
+#: shifts/models.py:954 shifts/templates/shifts/shift_day_printable.html:56
 #: shifts/templates/shifts/shift_detail.html:281
 #: shifts/templates/shifts/shift_detail_printable.html:51
 msgid "Attended"
 msgstr "Compareceu"
 
 #: coop/templates/coop/tags/user_coop_share_ownership_list_tag.html:58
-#: shifts/models.py:940
+#: shifts/models.py:953
 msgid "Pending"
 msgstr "Pendente"
 
@@ -2369,10 +2370,6 @@ msgstr "Criar uma nova pausa de adesão"
 #, python-format
 msgid "Edit membership pause: %(name)s"
 msgstr "Editar pausa de adesão: %(name)s"
-
-#: coop/views/membership_resignation.py:112
-msgid "Share(s) gifted {chr(8594)} SuperCoop"
-msgstr "Ação(ões) doadas {chr(8594)} SuperCoop"
 
 #: coop/views/membership_resignation.py:118
 msgid "Share(s) gifted"
@@ -2573,7 +2570,7 @@ msgid "List of all emails"
 msgstr "Lista de todos os e-mails"
 
 #: core/templates/core/email_list.html:39 shifts/models.py:56
-#: shifts/models.py:84 shifts/models.py:514 shifts/models.py:1079
+#: shifts/models.py:84 shifts/models.py:519 shifts/models.py:1092
 #: shifts/templates/shifts/user_shift_account_log.html:29
 msgid "Description"
 msgstr "Descrição"
@@ -2776,6 +2773,14 @@ msgstr "Adicionar nota"
 msgid "Log Type"
 msgstr "Tipo de registo"
 
+#: rizoma/apps.py:17
+msgid "Admin"
+msgstr ""
+
+#: rizoma/apps.py:20
+msgid "All shifts"
+msgstr "Todos os turnos"
+
 #: rizoma/coops_pt_auth_backend.py:43
 msgid "Invalid username or password"
 msgstr "Nome de utilizador ou palavra-passe inválidos"
@@ -2844,11 +2849,6 @@ msgstr "Enviado a um membro quando o Member Office marca o turno como em falta"
 msgid "Shift reminder"
 msgstr "Lembrete de turno"
 
-#: shifts/emails/shift_reminder_email.py:30
-#, python-brace-format
-msgid "Sent to a member {config.REMINDER_EMAIL_DAYS_BEFORE_SHIFT} days before their shift"
-msgstr "Enviado a um membro {config.REMINDER_EMAIL_DAYS_BEFORE_SHIFT} dias antes do seu turno"
-
 #: shifts/emails/stand_in_found_email.py:23
 msgid "Stand-in found"
 msgstr "Substituto encontrado"
@@ -2890,11 +2890,6 @@ msgstr "Avisos"
 msgid "I have read the warning about the missing qualification and confirm that the user should get registered to the shift"
 msgstr "Li o aviso sobre a qualificação em falta e confirmo que o utilizador deve ser registado no turno"
 
-#: shifts/forms.py:199
-#, python-brace-format
-msgid "The selected user is missing the required qualification for this shift : {missing_capabilities}"
-msgstr "O utilizador selecionado não possui a qualificação necessária para este turno: {missing_capabilities}"
-
 #: shifts/forms.py:242
 msgid "Please set the chosen time after the start of the shift"
 msgstr "Defina a hora escolhida após o início do turno"
@@ -2923,11 +2918,6 @@ msgstr "Este turno foi eliminado. Não é possível registar-se nele."
 msgid "I am aware that the member will be unregistered from their ABCD shift"
 msgstr "Tenho conhecimento de que o membro será removido do seu turno ABCD"
 
-#: shifts/forms.py:403
-#, python-brace-format
-msgid "{own_name} is already partner of {partner_of_name}, they can't have a partner of their own"
-msgstr "{own_name} já é parceiro de {partner_of_name}, não pode ter um parceiro próprio"
-
 #: shifts/forms.py:414
 msgid "The selected member must be an investing member."
 msgstr "O membro selecionado deve ser um membro investidor."
@@ -2943,11 +2933,6 @@ msgstr "Li o aviso sobre as presenças canceladas e confirmo que a isenção dev
 #: shifts/forms.py:522
 msgid "I have read the warning about the cancelled ABCD attendances and confirm that the exemption should be created"
 msgstr "Li o aviso sobre as presenças ABCD canceladas e confirmo que a isenção deve ser criada"
-
-#: shifts/forms.py:555
-#, python-brace-format
-msgid "The member will be unregistered from the following shifts because they are within the range of the exemption : {attendances_display}"
-msgstr "O membro será removido dos seguintes turnos por estarem dentro do período da isenção: {attendances_display}"
 
 #: shifts/forms.py:580
 #, python-format
@@ -2978,18 +2963,18 @@ msgstr "Idioma"
 msgid "This determines from which date shifts should be generated from this ABCD shift."
 msgstr "Determina a partir de que data os turnos devem ser gerados a partir deste turno ABCD."
 
-#: shifts/models.py:198 shifts/models.py:522
+#: shifts/models.py:198 shifts/models.py:527
 #: shifts/templates/shifts/shift_block_tag.html:9
 msgid "Flexible time"
 msgstr "Horário flexível"
 
-#: shifts/models.py:200 shifts/models.py:524
+#: shifts/models.py:200 shifts/models.py:529
 msgid "If enabled, members who register for that shift can choose themselves the time where they come do their shift."
 msgstr "Se ativado, os membros que se registam nesse turno podem escolher a hora a que vêm fazer o turno."
 
-#: shifts/models.py:418 shifts/models.py:832
+#: shifts/models.py:418 shifts/models.py:842
 #: shifts/templates/shifts/shift_detail.html:95
-#: shifts/templates/shifts/shift_template_detail.html:42
+#: shifts/templates/shifts/shift_template_detail.html:43
 msgid "Chosen time"
 msgstr "Hora escolhida"
 
@@ -2997,66 +2982,66 @@ msgstr "Hora escolhida"
 msgid "This shift lets you choose at what time you come during the day of the shift. In order to help organising the attendance, please specify when you expect to come.Setting or updating this field will set the time for all individual shifts generated from this ABCD shift.You can update the time of a single shift individually and at any time on the shift page."
 msgstr "Este turno permite-lhe escolher a hora a que vem no dia do turno. Para ajudar a organizar as presenças, indique quando prevê vir. Definir ou atualizar este campo definirá a hora para todos os turnos individuais gerados a partir deste turno ABCD. Pode atualizar a hora de um turno específico a qualquer momento na página do turno."
 
-#: shifts/models.py:504
+#: shifts/models.py:509
 msgid "Number of required attendances"
 msgstr "Número de presenças necessárias"
 
-#: shifts/models.py:506
+#: shifts/models.py:511
 msgid "If there are less members registered to a shift than that number, it will be highlighted in the shift calendar."
 msgstr "Se houver menos membros registados num turno do que esse número, o turno será destacado no calendário."
 
-#: shifts/models.py:515
+#: shifts/models.py:520
 msgid "Is shown on the shift page below the title"
 msgstr "É mostrado na página do turno abaixo do título"
 
-#: shifts/models.py:535 shifts/models.py:541
+#: shifts/models.py:540 shifts/models.py:546
 msgid "If 'flexible time' is enabled, then the time component is ignored"
 msgstr "Se o 'horário flexível' estiver ativado, o componente de hora é ignorado"
 
-#: shifts/models.py:834
+#: shifts/models.py:844
 msgid "This shift lets you choose at what time you come during the day of the shift. In order to help organising the attendance, please specify when you expect to come."
 msgstr "Este turno permite-lhe escolher a hora a que vem no dia do turno. Para ajudar na organização das presenças, indique quando prevê vir."
 
-#: shifts/models.py:942 shifts/templates/shifts/shift_day_printable.html:57
+#: shifts/models.py:955 shifts/templates/shifts/shift_day_printable.html:57
 #: shifts/templates/shifts/shift_detail.html:291
 #: shifts/templates/shifts/shift_detail_printable.html:52
 msgid "Missed"
 msgstr "Em falta"
 
-#: shifts/models.py:943 shifts/templates/shifts/shift_day_printable.html:58
+#: shifts/models.py:956 shifts/templates/shifts/shift_day_printable.html:58
 #: shifts/templates/shifts/shift_detail.html:321
 #: shifts/templates/shifts/shift_detail_printable.html:53
 msgid "Excused"
 msgstr "Justificado"
 
-#: shifts/models.py:944 shifts/templates/shifts/shift_detail.html:329
+#: shifts/models.py:957 shifts/templates/shifts/shift_detail.html:329
 msgid "Cancelled"
 msgstr "Cancelado"
 
-#: shifts/models.py:945 shifts/templates/shifts/shift_day_printable.html:97
+#: shifts/models.py:958 shifts/templates/shifts/shift_day_printable.html:97
 #: shifts/templates/shifts/shift_detail.html:313
 #: shifts/templates/shifts/shift_detail_printable.html:94
 #: shifts/templates/shifts/shift_filters.html:83
 msgid "Looking for a stand-in"
 msgstr "À procura de substituto"
 
-#: shifts/models.py:978
+#: shifts/models.py:991
 msgid "🏠 ABCD"
 msgstr "🏠 ABCD"
 
-#: shifts/models.py:979
+#: shifts/models.py:992
 msgid "✈ Flying"
 msgstr "✈ Voador"
 
-#: shifts/models.py:980
+#: shifts/models.py:993
 msgid "❄ Frozen"
 msgstr "❄ Congelado"
 
-#: shifts/models.py:1006
+#: shifts/models.py:1019
 msgid "Is frozen"
 msgstr "Está congelado"
 
-#: shifts/models.py:1185
+#: shifts/models.py:1198
 msgid "Cycle start date"
 msgstr "Data de início do ciclo"
 
@@ -3715,7 +3700,7 @@ msgstr "Horário flexível não especificado"
 #: shifts/templates/shifts/shift_day_printable.html:94
 #: shifts/templates/shifts/shift_detail.html:122
 #: shifts/templates/shifts/shift_detail_printable.html:90
-#: shifts/templates/shifts/shift_template_detail.html:64
+#: shifts/templates/shifts/shift_template_detail.html:66
 msgid "Shift partner: "
 msgstr "Parceiro de turno: "
 
@@ -3767,12 +3752,12 @@ msgid "Number"
 msgstr "Número"
 
 #: shifts/templates/shifts/shift_detail.html:89
-#: shifts/templates/shifts/shift_template_detail.html:38
+#: shifts/templates/shifts/shift_template_detail.html:39
 msgid "Details"
 msgstr "Detalhes"
 
 #: shifts/templates/shifts/shift_detail.html:90
-#: shifts/templates/shifts/shift_template_detail.html:40
+#: shifts/templates/shifts/shift_template_detail.html:41
 msgid "Registered user"
 msgstr "Utilizador registado"
 
@@ -3785,7 +3770,7 @@ msgid "Do you meet the requirements?"
 msgstr "Cumpre os requisitos?"
 
 #: shifts/templates/shifts/shift_detail.html:98
-#: shifts/templates/shifts/shift_template_detail.html:45
+#: shifts/templates/shifts/shift_template_detail.html:46
 msgid "Member-Office actions"
 msgstr "Ações do Escritório de Membros"
 
@@ -3821,8 +3806,7 @@ msgid ""
 "                                                            you can't\n"
 "                                                            attend, contact your shift leader as soon as\n"
 "                                                            possible."
-msgstr ""
-"Só pode procurar um substituto até %(NB_DAYS_FOR_SELF_LOOK_FOR_STAND_IN)s dias antes do turno. Se não puder participar, contacte o seu responsável de turno o mais rapidamente possível."
+msgstr "Só pode procurar um substituto até %(NB_DAYS_FOR_SELF_LOOK_FOR_STAND_IN)s dias antes do turno. Se não puder participar, contacte o seu responsável de turno o mais rapidamente possível."
 
 #: shifts/templates/shifts/shift_detail.html:183
 msgid "Look for a stand-in"
@@ -3840,8 +3824,7 @@ msgid ""
 "                                                        attend, look for a stand-in or contact your shift leader as soon\n"
 "                                                        as\n"
 "                                                        possible."
-msgstr ""
-"Só pode cancelar a sua inscrição até %(NB_DAYS_FOR_SELF_UNREGISTER)s dias antes do turno. Além disso, os turnos ABCD não podem ser cancelados. Se não puder participar, procure um substituto ou contacte o seu responsável de turno o mais rapidamente possível."
+msgstr "Só pode cancelar a sua inscrição até %(NB_DAYS_FOR_SELF_UNREGISTER)s dias antes do turno. Além disso, os turnos ABCD não podem ser cancelados. Se não puder participar, procure um substituto ou contacte o seu responsável de turno o mais rapidamente possível."
 
 #: shifts/templates/shifts/shift_detail.html:207
 msgid "Unregister myself"
@@ -3866,7 +3849,7 @@ msgstr ""
 "- O turno não tiver sido cancelado (férias, etc.)<br />"
 
 #: shifts/templates/shifts/shift_detail.html:254
-#: shifts/templates/shifts/shift_template_detail.html:95
+#: shifts/templates/shifts/shift_template_detail.html:98
 msgid "Not specified"
 msgstr "Não especificado"
 
@@ -3999,23 +3982,23 @@ msgstr "Configuração"
 msgid "ABCD Shift"
 msgstr "Turno ABCD"
 
-#: shifts/templates/shifts/shift_template_detail.html:34
+#: shifts/templates/shifts/shift_template_detail.html:35
 msgid "List of slots for this ABCD shifts"
 msgstr "Lista de lugares para este turno ABCD"
 
-#: shifts/templates/shifts/shift_template_detail.html:39
+#: shifts/templates/shifts/shift_template_detail.html:40
 msgid "Requirements"
 msgstr "Requisitos"
 
-#: shifts/templates/shifts/shift_template_detail.html:73
+#: shifts/templates/shifts/shift_template_detail.html:75
 msgid "Unregister"
 msgstr "Cancelar inscrição"
 
-#: shifts/templates/shifts/shift_template_detail.html:122
+#: shifts/templates/shifts/shift_template_detail.html:125
 msgid "Future generated Shifts"
 msgstr "Turnos futuros gerados"
 
-#: shifts/templates/shifts/shift_template_detail.html:132
+#: shifts/templates/shifts/shift_template_detail.html:135
 msgid "Past generated Shifts"
 msgstr "Turnos passados gerados"
 
@@ -4344,32 +4327,27 @@ msgctxt "No shift partner"
 msgid "None"
 msgstr "Nenhum"
 
-#: shifts/templatetags/shifts.py:61 shifts/templatetags/shifts.py:165
-#: shifts/views/views.py:148
+#: shifts/templatetags/shifts.py:57 shifts/templatetags/shifts.py:154
+#: shifts/views/views.py:149
 msgid "General"
 msgstr "Geral"
 
-#: shifts/utils.py:163
-#, python-brace-format
-msgid "Unknown mode {attendance_mode}"
-msgstr "Modo desconhecido {attendance_mode}"
-
-#: shifts/views/attendance.py:197 shifts/views/attendance.py:341
+#: shifts/views/attendance.py:202 shifts/views/attendance.py:347
 #, python-format
 msgid "Shift attendance: %(name)s"
 msgstr "Presença no turno: %(name)s"
 
-#: shifts/views/attendance.py:203 shifts/views/attendance.py:347
+#: shifts/views/attendance.py:208 shifts/views/attendance.py:353
 #, python-format
 msgid "Updating shift attendance: %(member_link)s, %(slot_link)s"
 msgstr "A atualizar presença no turno: %(member_link)s, %(slot_link)s"
 
-#: shifts/views/attendance.py:381
+#: shifts/views/attendance.py:387
 #, python-format
 msgid "ABCD attendance: %(name)s"
 msgstr "Presença ABCD: %(name)s"
 
-#: shifts/views/attendance.py:388
+#: shifts/views/attendance.py:394
 #, python-format
 msgid "Updating ABCD attendance: %(member_link)s, %(slot_link)s"
 msgstr "A atualizar presença ABCD: %(member_link)s, %(slot_link)s"
@@ -4437,22 +4415,22 @@ msgstr "Não foi possível encontrar uma presença de turno para usar como turno
 msgid "Solidarity Shift given. Account Balance debited with -1."
 msgstr "Turno solidário doado. Saldo da conta debitado em -1."
 
-#: shifts/views/views.py:128 shifts/views/views.py:133
+#: shifts/views/views.py:129 shifts/views/views.py:134
 #, python-format
 msgid "Edit user shift data: %(name)s"
 msgstr "Editar dados de turnos do utilizador: %(name)s"
 
-#: shifts/views/views.py:201
+#: shifts/views/views.py:202
 #, python-format
 msgid "Shift account: %(name)s"
 msgstr "Conta de turnos: %(name)s"
 
-#: shifts/views/views.py:207
+#: shifts/views/views.py:208
 #, python-format
 msgid "Create manual shift account entry for: %(link)s"
 msgstr "Criar registo manual na conta de turnos para: %(link)s"
 
-#: shifts/views/views.py:358
+#: shifts/views/views.py:367
 msgid "Frozen statuses updated."
 msgstr "Estados congelados atualizados."
 
@@ -4774,6 +4752,7 @@ msgstr ""
 "\n"
 "                O seu crédito atual é %(credit)s€.\n"
 "            "
+
 #: statistics/templates/statistics/tags/credit_account_card.html:14
 msgid "List of last charged credits"
 msgstr "Lista dos últimos créditos carregados"
@@ -5851,3 +5830,26 @@ msgstr "%(name)s não é membro da cooperativa. Pode ter transferido as suas aç
 #, python-format
 msgid "%(name)s has not attended a welcome session yet. Make sure they plan to do it!"
 msgstr "%(name)s ainda não participou numa sessão de boas-vindas. Certifique-se de que planeiam fazê-lo!"
+
+#~ msgid "Share(s) gifted {chr(8594)} SuperCoop"
+#~ msgstr "Ação(ões) doadas {chr(8594)} SuperCoop"
+
+#, python-brace-format
+#~ msgid "Sent to a member {config.REMINDER_EMAIL_DAYS_BEFORE_SHIFT} days before their shift"
+#~ msgstr "Enviado a um membro {config.REMINDER_EMAIL_DAYS_BEFORE_SHIFT} dias antes do seu turno"
+
+#, python-brace-format
+#~ msgid "The selected user is missing the required qualification for this shift : {missing_capabilities}"
+#~ msgstr "O utilizador selecionado não possui a qualificação necessária para este turno: {missing_capabilities}"
+
+#, python-brace-format
+#~ msgid "{own_name} is already partner of {partner_of_name}, they can't have a partner of their own"
+#~ msgstr "{own_name} já é parceiro de {partner_of_name}, não pode ter um parceiro próprio"
+
+#, python-brace-format
+#~ msgid "The member will be unregistered from the following shifts because they are within the range of the exemption : {attendances_display}"
+#~ msgstr "O membro será removido dos seguintes turnos por estarem dentro do período da isenção: {attendances_display}"
+
+#, python-brace-format
+#~ msgid "Unknown mode {attendance_mode}"
+#~ msgstr "Modo desconhecido {attendance_mode}"
