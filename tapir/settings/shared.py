@@ -368,7 +368,7 @@ PERMISSIONS = {
 }
 
 AUTH_USER_MODEL = "accounts.TapirUser"
-LOGIN_REDIRECT_URL = "accounts:user_me"
+LOGIN_REDIRECT_URL = "/accounts/"
 
 SITE_URL = env("SITE_URL", default="http://localhost:8000")
 CSRF_TRUSTED_ORIGINS = [SITE_URL]

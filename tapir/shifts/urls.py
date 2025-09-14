@@ -73,6 +73,10 @@ urlpatterns = [
         views.shift_attendance_template_delete,
         name="shift_attendance_template_delete",
     ),
+    path('dashboard',
+        views.UserDashboardView.as_view(),
+        name='dashboard',
+    ),
     path(
         "calendar",
         views.ShiftCalendarView.as_view(),

@@ -47,3 +47,5 @@ CELERY_BEAT_SCHEDULE.update(
         },
     }
 )
+
+LOGIN_REDIRECT_URL = "/shifts/dashboard"
