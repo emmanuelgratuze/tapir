@@ -3,13 +3,30 @@
 from .shared import *
 from .env import (env, BASE_DIR)
 
-LANGUAGE_CODE = "en"
+LANGUAGE_CODE = "pt" # PT?!?
+PHONENUMBER_DEFAULT_REGION = "PT"
 TIME_ZONE = "Europe/Lisbon"
+
+# FIXME: we probably need to update these for rizoma
+
+EMAIL_ADDRESS_MEMBER_OFFICE = "mitglied@rizomacoop.pt "
+EMAIL_ADDRESS_ACCOUNTING_TEAM = "accounting@rizomacoop.pt "
+EMAIL_ADDRESS_ACCOUNTING_SOFTWARE = env.str(
+    "EMAIL_ADDRESS_ACCOUNTING_SOFTWARE", default=None
+)
+EMAIL_ADDRESS_MANAGEMENT = "contact@rizomacoop.pt "
+EMAIL_ADDRESS_SUPERVISORS = "aufsichtsrat@rizomacoop.pt "
+
+COOP_NAME = "Rizoma"
+COOP_FULL_NAME = "Rizoma Cooperativa Integral "
+COOP_STREET = "R. José Estêvão 4"
+COOP_PLACE = "1150-192 Lisboa, Portugal"
+FROM_EMAIL_MEMBER_OFFICE = f"{COOP_NAME} Membros <{EMAIL_ADDRESS_MEMBER_OFFICE}>"
+DEFAULT_FROM_EMAIL = FROM_EMAIL_MEMBER_OFFICE
+
 
 # we need to add our rizoma app
 INSTALLED_APPS.append("tapir.rizoma")
-
-PHONENUMBER_DEFAULT_REGION = "PT"
 
 ACTIVE_LOGIN_BACKEND = env.str("ACTIVE_LOGIN_BACKEND", default="coops.pt")
 if ACTIVE_LOGIN_BACKEND == LOGIN_BACKEND_COOPS_PT:
