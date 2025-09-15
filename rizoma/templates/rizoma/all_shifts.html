@@ -1,95 +1,123 @@
-{% extends "shifts/base.html" %}
+{% extends "shifts/base.html"  %}
+
+{% block body_class %}all-shifts-page{% endblock %}
+
 {% load django_bootstrap5 %}
 {% load static %}
 {% load shifts %}
 {% load i18n %}
 {% load core %}
 {% block head %}
+
     {{ block.super }}
+
+    
+
     <link rel="stylesheet" href="{% static 'shifts/css/shifts.css' %}">
     <script src="{% static 'shifts/ShiftFiltersManager.js' %}?version=2" defer></script>
-    <script>
-        function onFilter() {
-            let url = "{% url "shifts:calendar" %}";
-            url += "?date_from=" + document.getElementById("date-from").value;
-            url += "&date_to=" + document.getElementById("date-to").value;
-            window.location = url;
-        }
-    </script>
 {% endblock head %}
 {% block content %}
-    <div class="d-flex align-items-end flex-column m-2">
-        <button class="{% tapir_button_link %}"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseCalendarInfo"
-                aria-expanded="false"
-                style="text-decoration: none">
-            <span class="material-icons">unfold_more</span>{% translate "Legend & Filters" %}
+
+    <script>
+        function onPreviousWeek() {
+            window.location.href = "?date_from={{ previous_week_range.start|date:'Y-m-d' }}&date_to={{ previous_week_range.end|date:'Y-m-d' }}";
+        }
+
+        function onNextWeek() {
+            window.location.href = "?date_from={{ next_week_range.start|date:'Y-m-d' }}&date_to={{ next_week_range.end|date:'Y-m-d' }}";
+        }
+    </script>
+
+    <div class="container">
+
+    <h1 class="h1">
+      {{ _("All Shifts") }}
+    </h1>
+
+    <div class="tab-links mb-4">
+      <span class="tab-link tab-link__active">{{_("Upcoming")}}</span>
+      <a href="{% url 'shifts:shift_template_group_calendar' %}" class="tab-link">{{_("Recurring")}}</a>
+    </div>
+
+    <div class="date-picker d-flex align-items-center gap-2 mb-4">
+      <!-- Date Picker -->
+      <div class="btn-group">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          {{ current_week_range.start|date:"M j" }} - {{ current_week_range.end|date:"M j, Y" }}
         </button>
+        <!-- Navigation arrows -->
+        <button class="btn btn-outline-secondary calendar-previous-week" onclick="onPreviousWeek()">
+          <span>&lt;</span>
+        </button>
+        <button class="btn btn-outline-secondary btn-last" onclick="onNextWeek()">
+          <span>&gt;</span>
+        </button>
+
+        <ul class="dropdown-menu">
+          {% if week_ranges %}
+            {% for week in week_ranges %}
+              <li>
+                <a class="dropdown-item{% if week == current_week_range %} active{% endif %}" href="?date_from={{ week.start|date:'Y-m-d' }}&date_to={{ week.end|date:'Y-m-d' }}">
+                  {{ week.start|date:"M j" }} - {{ week.end|date:"M j, Y" }}
+                </a>
+              </li>
+            {% endfor %}
+          {% else %}
+            <li class="dropdown-item text-muted">{% trans "No weeks available" %}</li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
-    <div class="collapse" id="collapseCalendarInfo">
-        <div class="card-group mb-2">
-            <div class="card">
-                <h5 class="card-header">
-                    {% block card_title %}
-                    {% endblock card_title %}
-                </h5>
-                <div class="card-body">
-                    {% block card_helptext %}
-                    {% endblock card_helptext %}
-                </div>
-            </div>
-            {% shift_filters %}
-        </div>
-    </div>
-    {% for week, shifts_by_day in shifts_by_weeks_and_days.items %}
-        <div class="card mb-2">
-            {% with week_group=week_to_group|dictionary_get:week %}
-                <div class="card-header d-flex flex-wrap justify-content-between align-items-center">
-                    <h5 style="margin-bottom: 0">
-                        KW {{ week|date:"W" }} {% translate 'starting' %} {{ week }},
-                        {% translate 'Week ' %}{{ week_group.name }}
-                    </h5>
-                    <div class="d-flex flex-wrap align-items-end align-items-center">
-                        <div class="d-inline-flex align-items-baseline p-2 ">
-                            <label for="date-from" class="form-label pe-2">{% translate "From" %}</label>
-                            <input id="date-from"
-                                   type="date"
-                                   value="{{ date_from }}"
-                                   class="form-control" />
-                        </div>
-                        <div class="d-inline-flex align-items-baseline p-2">
-                            <label for="date-to" class="form-label pe-2">{% translate "To" %}</label>
-                            <input id="date-to" type="date" value="{{ date_to }}" class="form-control" />
-                        </div>
-                        <button class="{% tapir_button_link %} btn" onclick="onFilter()">
-                            <span class="material-icons">filter_alt</span>{% translate "Filter" %}
-                        </button>
-                    </div>
-                </div>
-            {% endwith %}
-            <div class="card-body d-flex flex-row flex-wrap gap-2">
-                {% for day, shift_infos in shifts_by_day.items %}
-                    <div class="d-flex flex-column">
-                        <h5 style="text-align: center;">{{ day|date:"l" }}</h5>
-                        <h6 style="text-align: center;">
-                            {{ day|date:"M d" }}
-                            {% if perms.welcomedesk.view %}
-                                <a href="{% url 'shifts:shift_day_printable' day|date:'d-m-y' %}"
-                                   class="{% tapir_button_link %}">
-                                    <span class="material-icons">print</span>
-                                </a>
-                            {% endif %}
-                        </h6>
-                        {% for shift in shift_infos %}
-                            <!-- a bit of margin so the boxes don't overlap -->
-                            <div style="margin: 3px">
-                                <a href="{% url 'shifts:shift_detail' shift.pk %}">{% shift_block shift True %}</a>
-                            </div>
-                        {% endfor %}
-                    </div>
+
+    {% for day, shift_infos in shifts_infos_by_day.items %}
+        <section class="mb-5">
+            <h2 class="h3">
+                {{ day|date:"D d/m/y" }}
+            </h2>
+
+            <table class="table attendances-table">
+              <thead>
+                <th></th>
+                {% for time in shift_infos.times %}
+                  <th>{{ time.start_time|date:"H:i" }} - {{ time.end_time|date:"H:i" }}</th>
                 {% endfor %}
-            </div>
-        </div>
+              </thead>
+              <tbody>
+                {% for name in shift_infos.names %}
+                  <tr>
+                    <td>{{ name }}</td>
+
+                    {% for time in shift_infos.times %}
+                    <td class="shift-attendances">
+                    {% for shift in shift_infos.shifts%}
+
+                        {% if shift.start_time == time.start_time %}
+                        <div class="d-flex flex-column align-items-start gap-1">
+                            {% for attendance in shift.attendances|dictionary_get:name %}
+                                {% if attendance.state == "empty" %}
+                                  <a href="{% url 'shifts:slot_register' attendance.slot.pk %}" class="text-decoration-none">
+                                    <span class="badge bg-secondary d-flex align-items-center gap-1">
+                                        {{_("Empty")}}
+                                        <span class="material-icons">edit</span>
+                                    </span>
+                                  </a>
+                                
+                                {% else %}
+                                  <span class="badge {% if attendance.state == "regular" %}bg-dark{% else %}bg-warning{% endif %}" class="text-decoration-none">
+                                      {{ attendance.user.get_full_name }}
+                                  </span>
+                                {% endif %}
+                            {% endfor %}
+                          </div>
+                        {% endif %}
+                    {% endfor %}
+                    </td>
+                    {% endfor %}
+                  </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+        </section>
     {% endfor %}
+    </div>
 {% endblock content %}
