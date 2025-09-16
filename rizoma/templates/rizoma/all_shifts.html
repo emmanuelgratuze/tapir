@@ -103,8 +103,13 @@
                                   </a>
                                 
                                 {% else %}
-                                  <span class="badge {% if attendance.state == "regular" %}bg-dark{% else %}bg-warning{% endif %}" class="text-decoration-none">
+                                  <span class="text-gray" class="text-decoration-none">
                                       {{ attendance.user.get_full_name }}
+                                      {% if attendance.state == "single" %}
+                                        <span class="badge bg-body-secondary ml-1 text-black fw-normal">
+                                          {{ _("Flex") }}
+                                        </span>
+                                      {% endif %}
                                   </span>
                                 {% endif %}
                             {% endfor %}
