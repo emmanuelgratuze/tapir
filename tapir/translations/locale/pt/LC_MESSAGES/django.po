@@ -3,28 +3,31 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-12 10:41+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"POT-Creation-Date: 2025-07-28 12:56+0200\n"
+"PO-Revision-Date: 2025-09-29 08:38+0000\n"
+"Last-Translator: Lara Carvalho <laracjcarvalho@gmail.com>\n"
+"Language-Team: Portuguese <http://weblate.seriousdino.org/projects/tapir/"
+"tapir-python-translations/pt/>\n"
+"Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Weblate 5.12.2\n"
 
 #: accounts/emails/create_account_reminder_email.py:20
 msgid "Create account reminder"
-msgstr "Lembrete de criação de conta"
+msgstr "Lembrete para criar conta"
 
 #: accounts/emails/create_account_reminder_email.py:25
 msgid "Sent to active member if they haven't created the account 1 month after becoming member."
-msgstr "Enviado a membros ativos caso não tenham criado a conta 1 mês após se tornarem membros."
+msgstr ""
+"Enviado a membros ativos caso não tenham criado conta 1 mês após se tornarem "
+"membros."
 
 #: accounts/forms.py:116
 msgid "This username is not available."
@@ -63,7 +66,7 @@ msgstr "Data de nascimento"
 
 #: accounts/models.py:67 coop/models.py:74 coop/models.py:450
 msgid "Street and house number"
-msgstr "Rua e número da casa"
+msgstr "Rua/Avenida e número"
 
 #: accounts/models.py:68 coop/models.py:75 coop/models.py:451
 msgid "Extra address line"
@@ -98,14 +101,14 @@ msgstr "Idioma preferido"
 #: accounts/models.py:113 accounts/models.py:125
 #: coop/views/membership_pause.py:74 shifts/views/exemptions.py:214
 msgid "None"
-msgstr "Nenhum"
+msgstr "Nenhum(a)"
 
 #: accounts/models.py:267
 msgid "This username is already taken."
 msgstr "Este nome de utilizador já está em uso."
 
 #: accounts/templates/accounts/edit_username.default.html:13
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        Edit username: %(display_name_full)s\n"
@@ -116,7 +119,7 @@ msgstr ""
 "    "
 
 #: accounts/templates/accounts/edit_username.default.html:22
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "                    Edit username: %(display_name_full)s\n"
@@ -127,7 +130,7 @@ msgstr ""
 "                "
 
 #: accounts/templates/accounts/edit_username.default.html:28
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "                        <p>Your old username is %(old_username)s.</p>\n"
@@ -136,8 +139,8 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                        <p>O seu antigo nome de utilizador é %(old_username)s.</p>\n"
-"                        <p>Se alguma vez atualizou a wiki, por favor contacte a equipa da Wiki no Slack <a href=\"https://supercoopberlin.slack.com/archives/C01UCL82XMF\">#wiki</a> para manter a sua página de membro e o histórico das suas alterações.</p>\n"
+"                        <p>O teu antigo nome de utilizador é "
+"%(old_username)s.</p>\n"
 "                    "
 
 #: accounts/templates/accounts/edit_username.default.html:41
@@ -154,7 +157,7 @@ msgid "Save"
 msgstr "Guardar"
 
 #: accounts/templates/accounts/email/create_account_reminder.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hi %(display_name_short)s,</p>\n"
@@ -187,46 +190,16 @@ msgid ""
 "            The Member Office\n"
 "        </p>\n"
 "    "
-msgstr ""
-"\n"
-"        <p>Olá %(display_name_short)s,</p>\n"
-"        <p>Notámos que já é membro da SuperCoop há um mês/semana, mas ainda não criou uma conta Tapir para se inscrever no seu primeiro turno.</p>\n"
-"        <p>\n"
-"            Como lembrete, para se inscrever no seu primeiro turno (ou indicar que tem direito a uma\n"
-"            <a href=\"https://docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.rjj2v2m92fqa\">isenção</a>),\n"
-"            visite o Escritório de Membros na nossa loja.\n"
-"            Lá será criada uma conta para si no Tapir, o nosso sistema online de gestão de turnos, \n"
-"            e será guiado nos passos para escolher o seu turno e grupo de trabalho.\n"
-"        </p>\n"
-"        <p>\n"
-"            Para perguntas gerais sobre a sua adesão, contacte o Escritório de Membros por email <a href=\"mailto:mitglied@supercoop.de\">(mitglied@supercoop.de)</a>\n"
-"            ou visite a <a href=\"https://www.google.com/maps/place/SuperCoop+Berlin/@52.553371,13.3585897,15z/data=!4m5!3m4!1s0x0:0x72e80db955fa8d3!8m2!3d52.5533091!4d13.3586012\">SuperCoop</a>.\n"
-"            Sinta-se à vontade para passar e conhecer outros SuperCoopies em pessoa! O horário de abertura é:\n"
-"        <ul>\n"
-"            <li>Segunda - Sexta das 16:30 às 19:30</li>\n"
-"            <li>Sábados das 11:00 às 14:00</li>\n"
-"        </ul>\n"
-"        </p>\n"
-"        <p>\n"
-"            Como encontrar a SuperCoop?\n"
-"        </p>\n"
-"        <p>\n"
-"            Pode encontrar a nossa loja na Oudenarder Straße 16, 13347 Berlim, na esquina com a Seestraße. \n"
-"            Existe também uma entrada traseira, acessível através do antigo Osramhöfe. Esta entrada é acessível a pessoas com mobilidade reduzida.\n"
-"        </p>\n"
-"        <p>\n"
-"            Saudações cooperativas,<br />\n"
-"            O Escritório de Membros\n"
-"        </p>\n"
-"    "
+msgstr " "
 
 #: accounts/templates/accounts/email/create_account_reminder.subject.html:2
+#, fuzzy
 msgid ""
 "\n"
 "    Don't forget to sign up for your first shift at SuperCoop!\n"
 msgstr ""
 "\n"
-"    Não se esqueça de se inscrever para o seu primeiro turno na SuperCoop!\n"
+"    Não te esqueças de te inscrever no teu primeiro turno!\n"
 
 #: accounts/templates/accounts/ldap_group_list.html:7
 #: accounts/templates/accounts/user_detail.html:110
@@ -247,7 +220,7 @@ msgstr "Mais informações"
 
 #: accounts/templates/accounts/purchase_tracking_card.html:25
 msgid "The checkout system links your purchase to your member account. The total amount of your purchase is saved each time. However, it does not record which specific products you have purchased. You can also still decide with each purchase whether you want to have your membership card scanned or not. With your general consent here on Tapir, you do not enter into any obligation to scan. You can revoke your consent at any time by deactivating the checkbox above. With your consent, you help Supercoop to better understand the shopping habits of its members. This is important for the further development of our supermarket. More information: https://wiki.supercoop.de/wiki/Mitgliederkarte"
-msgstr "O sistema de caixa associa a sua compra à sua conta de membro. O valor total da sua compra é guardado em cada transação. No entanto, não são registados os produtos específicos que comprou. Pode também decidir, em cada compra, se deseja ou não que o seu cartão de membro seja lido. Ao dar o seu consentimento geral aqui no Tapir, não assume nenhuma obrigação de leitura. Pode revogar o seu consentimento a qualquer momento, desmarcando a caixa acima. Com o seu consentimento, ajuda a Supercoop a compreender melhor os hábitos de compra dos seus membros. Isto é importante para o desenvolvimento futuro do nosso supermercado. Mais informações: https://wiki.supercoop.de/wiki/Mitgliederkarte"
+msgstr ""
 
 #: accounts/templates/accounts/purchase_tracking_card.html:30
 #: coop/templates/coop/tags/user_coop_share_ownership_list_tag.html:169
@@ -372,7 +345,7 @@ msgid "Password reset"
 msgstr "Redefinição de palavra-passe"
 
 #: accounts/templates/registration/email/password_reset_email.html:14
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "                    <p>Hi %(display_name_short)s,</p>\n"
@@ -387,20 +360,24 @@ msgstr ""
 "\n"
 "                    <p>Olá %(display_name_short)s,</p>\n"
 "                    <p>\n"
-"                        Foi feito um pedido para redefinir a palavra-passe de %(email)s.<br />\n"
-"                        O seu nome de utilizador é %(username)s <br />\n"
-"                        Siga este link para redefinir a sua palavra-passe: <a href=\"%(password_reset_url_full)s\">%(password_reset_url_full)s</a>\n"
-"                        Se o link não funcionar, tente abri-lo numa janela privada (modo incógnito) ou noutro navegador.\n"
+"                        Foi feito um pedido para redefinir a palavra-passe "
+"de %(email)s.<br />\n"
+"                        O teu nome de utilizador é %(username)s <br />\n"
+"                        Segue este link para redefinir a tua palavra-passe: "
+"<a href=\"%(password_reset_url_full)s\">%(password_reset_url_full)s</a>\n"
+"                        Se o link não funcionar, tenta abri-lo numa janela "
+"privada (modo incógnito) ou noutro navegador.\n"
 "                    </p>\n"
 "                "
 
 #: accounts/templates/registration/email/password_reset_subject.html:2
+#, fuzzy
 msgid ""
 "\n"
 "    Reset your password\n"
 msgstr ""
 "\n"
-"    Redefina a sua palavra-passe\n"
+"    Redefine a tua palavra-passe\n"
 
 #: accounts/templates/registration/login.html:7
 msgid "Login"
@@ -413,11 +390,11 @@ msgstr "Entrar"
 
 #: accounts/templates/registration/login.html:45
 msgid "Click here to show/hide the password"
-msgstr "Clique aqui para mostrar/ocultar a palavra-passe"
+msgstr "Clica aqui para mostrar/ocultar a palavra-passe"
 
 #: accounts/templates/registration/login.html:55
 msgid "Forgot your password or your username?"
-msgstr "Esqueceu-se da sua palavra-passe ou do seu nome de utilizador?"
+msgstr "Esqueceste-te da tua palavra-passe ou do teu nome de utilizador?"
 
 #: accounts/templates/registration/password_reset_complete.html:7
 msgid "Password set"
@@ -425,11 +402,11 @@ msgstr "Palavra-passe definida"
 
 #: accounts/templates/registration/password_reset_complete.html:9
 msgid "Your password has been set. You may go ahead and sign in now."
-msgstr "A sua palavra-passe foi definida. Já pode iniciar sessão."
+msgstr "A tua palavra-passe foi definida. Já podes iniciar sessão."
 
 #: accounts/templates/registration/password_reset_complete.html:11
 msgid "Go to login page"
-msgstr "Ir para a página de login"
+msgstr "Ir para a página de iniciar sessão"
 
 #: accounts/templates/registration/password_reset_confirm.html:9
 #: accounts/templates/registration/password_update.html:8
@@ -438,7 +415,7 @@ msgstr "Definir uma nova palavra-passe"
 
 #: accounts/templates/registration/password_reset_confirm.html:11
 msgid "Please enter a new password"
-msgstr "Por favor, introduza uma nova palavra-passe"
+msgstr "Por favor, introduz uma nova palavra-passe"
 
 #: accounts/templates/registration/password_reset_confirm.html:15
 msgid "Change password"
@@ -446,7 +423,9 @@ msgstr "Alterar palavra-passe"
 
 #: accounts/templates/registration/password_reset_confirm.html:21
 msgid "The password reset link was invalid, possibly because it has already been used. Please request a new password reset."
-msgstr "O link de redefinição de palavra-passe é inválido, possivelmente porque já foi utilizado. Por favor, solicite uma nova redefinição."
+msgstr ""
+"O link de redefinição de palavra-passe é inválido, possivelmente porque já "
+"foi utilizado. Por favor, solicita uma nova redefinição."
 
 #: accounts/templates/registration/password_reset_done.html:7
 msgid "Password reset instructions have been sent."
@@ -454,14 +433,18 @@ msgstr "As instruções para redefinir a palavra-passe foram enviadas."
 
 #: accounts/templates/registration/password_reset_done.html:9
 msgid "We have emailed you instructions for setting your password, if an account exists with the email you entered. You should receive them shortly. If you don't receive an email, please make sure you've entered the address you registered with, and check your spam folder."
-msgstr "Enviámos por email as instruções para definir a sua palavra-passe, se existir uma conta com o endereço que indicou. Deve recebê-las em breve. Se não receber, verifique se introduziu o email correto e confira a sua pasta de spam."
+msgstr ""
+"Enviámos por email as instruções para definires a tua palavra-passe, se "
+"existir uma conta com o email que indicaste. Deves recebê-las em breve. Se "
+"não receberes, verifica se introduziste o email correto e a tua pasta de "
+"spam."
 
 #: accounts/templates/registration/password_reset_form.html:10
 msgid "Problems with logging in?"
 msgstr "Problemas ao iniciar sessão?"
 
 #: accounts/templates/registration/password_reset_form.html:16
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "                            Please enter your email address, we will send you instructions to reset your password. <br />\n"
@@ -470,22 +453,29 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            Por favor, introduza o seu endereço de email e enviaremos instruções para redefinir a sua palavra-passe. <br />\n"
-"                            O seu nome de utilizador será incluído no email, caso o tenha esquecido. <br />\n"
-"                            Se se esqueceu tanto do seu email como do seu nome de utilizador, contacte o escritório de membros: <a href=\"mailto:%(contact_member_office)s\">%(contact_member_office)s</a>, indicando o seu nome completo e, se souber, o seu número de membro.\n"
+"                            Por favor, introduz o teu endereço de email e "
+"enviaremos instruções para redefinir a tua palavra-passe. <br />\n"
+"                            O teu nome de utilizador será incluído no email, "
+"caso o tenhas esquecido. <br />\n"
+"                            Se te esqueceste tanto do teu email como do teu "
+"nome de utilizador, contacta o GTT-IT ou o GTT-membros: <a href="
+"\"mailto:%(contact_member_office)s\">%(contact_member_office)s</a>, "
+"indicando o teu nome completo e número de membro.\n"
 "                        "
 
 #: accounts/templates/registration/password_reset_form.html:24
 msgid "Back to login form"
-msgstr "Voltar ao formulário de login"
+msgstr "Voltar ao formulário de início de sessão"
 
 #: accounts/templates/registration/password_reset_form.html:26
 msgid "Send me instructions!"
-msgstr "Enviar-me instruções!"
+msgstr "Envia-me instruções!"
 
 #: accounts/validators.py:11
 msgid "Enter a valid username. This value may contain only letters, numbers, and ./-/_ characters."
-msgstr "Insira um nome de utilizador válido. Este valor pode conter apenas letras, números e os caracteres ./-/_."
+msgstr ""
+"Insere um nome de utilizador válido. Este apenas pode conter letras, números "
+"e os caracteres ./-/_."
 
 #: accounts/views.py:112 accounts/views.py:117 coop/views/shareowner.py:277
 #: coop/views/shareowner.py:282
@@ -498,13 +488,16 @@ msgid "Account welcome email sent."
 msgstr "E-mail de boas-vindas da conta enviado."
 
 #: accounts/views.py:202
+#, fuzzy
 msgid "You can only look at your own barcode unless you have member office rights"
-msgstr "Só pode ver o seu próprio código de barras, a menos que tenha direitos de administração de membros."
+msgstr ""
+"Só podes ver o teu próprio código de barras se tiveres perfil de "
+"administrador."
 
 #: accounts/views.py:285 accounts/views.py:290
-#, python-format
+#, fuzzy, python-format
 msgid "Edit member groups: %(name)s"
-msgstr "Editar grupos do membro: %(name)s"
+msgstr "Editar grupos de membro: %(name)s"
 
 #: accounts/views.py:384 accounts/views.py:389
 #, python-format
@@ -520,7 +513,7 @@ msgstr "Membros"
 #: coop/templates/coop/draftuser_register_form.default.html:11
 #: coop/templates/coop/draftuser_register_form.html:11
 msgid "Applicants"
-msgstr "Candidatos"
+msgstr "Candidatos(as)"
 
 #: coop/apps.py:45 coop/templates/coop/member_management.html:7
 msgid "Member management"
@@ -545,23 +538,24 @@ msgstr "Enviado a um membro quando um novo co-comprador é registado no seu perf
 
 #: coop/emails/extra_shares_confirmation_email.py:26
 msgid "Extra shares bought"
-msgstr "Ações adicionais compradas"
+msgstr "Títulos adicionais comprados"
 
 #: coop/emails/extra_shares_confirmation_email.py:30
 msgid "Sent when someone who is already a member buys more shares"
-msgstr "Enviado quando alguém que já é membro compra mais ações"
+msgstr "Enviado quando alguém que já é membro compra mais títulos"
 
 #: coop/emails/membership_confirmation_email_for_active_member.py:26
 msgid "Membership confirmation for active users"
 msgstr "Confirmação de adesão para membros ativos"
 
 #: coop/emails/membership_confirmation_email_for_investing_member.py:26
+#, fuzzy
 msgid "Membership confirmation for investing users"
 msgstr "Confirmação de adesão para membros investidores"
 
 #: coop/emails/membershipresignation_confirmation_email.py:22
 msgid "Confirmation Email for resigned members."
-msgstr "E-mail de confirmação para membros demissionários."
+msgstr "E-mail de confirmação para membros demissionários (ex-membros)."
 
 #: coop/emails/membershipresignation_confirmation_email.py:26
 msgid "Automatically sent after a member has been resigned."
@@ -569,11 +563,13 @@ msgstr "Enviado automaticamente após a saída de um membro."
 
 #: coop/emails/membershipresignation_transferred_shares_confirmation.py:21
 msgid "Confirmation Email for transferred shares."
-msgstr "E-mail de confirmação para ações transferidas."
+msgstr "E-mail de confirmação para títulos transferidos."
 
 #: coop/emails/membershipresignation_transferred_shares_confirmation.py:26
 msgid "Automatically sent to the member who received shares after a resignation."
-msgstr "Enviado automaticamente ao membro que recebeu ações após uma saída."
+msgstr ""
+"Enviado automaticamente ao membro que foi reembolsado pelo valor dos títulos "
+"após a sua saída."
 
 #: coop/emails/tapir_account_created_email.py:25
 msgid "Tapir account created"
@@ -589,8 +585,11 @@ msgid "Start date"
 msgstr "Data de início"
 
 #: coop/forms.py:44
+#, fuzzy
 msgid "Usually, the date on the membership agreement, or today. In the case of sold or gifted shares, can be set in the future."
-msgstr "Normalmente, a data do contrato de adesão, ou a data de hoje. No caso de ações vendidas ou doadas, pode ser definida no futuro."
+msgstr ""
+"Normalmente, a data do contrato de adesão, ou a data de hoje. No caso de "
+"títulos doados, pode ser definida no futuro."
 
 #: coop/forms.py:49
 #: financingcampaign/templates/financingcampaign/general.html:28
@@ -598,43 +597,62 @@ msgid "End date"
 msgstr "Data de fim"
 
 #: coop/forms.py:53
+#, fuzzy
 msgid "Usually left empty. Can be set to a point in the future if it is already known that the shares will be transferred to another member in the future."
-msgstr "Normalmente deixado em branco. Pode ser definido para uma data futura se já se souber que as ações serão transferidas para outro membro."
+msgstr ""
+"Normalmente deixado em branco. Pode ser definido para uma data futura se já "
+"se souber que as ações serão transferidas para outro membro."
 
 #: coop/forms.py:59
 msgid "Number of shares to create"
-msgstr "Número de ações a criar"
+msgstr "Número de títulos a criar"
 
 #: coop/forms.py:67
 msgid "The end date must be later than the start date."
-msgstr "A data de fim deve ser posterior à data de início."
+msgstr "A data de saída deve ser posterior à data de início."
 
 #: coop/forms.py:105 coop/models.py:463
 msgid "Number of Shares"
-msgstr "Número de ações"
+msgstr "Número de títulos"
 
 #: coop/forms.py:110
-#, python-format
+#, fuzzy, python-format
 msgid "Number of shares you would like to purchase. The price of one share is EUR %(share_price)s. You need to purchase at least one share to become member of the cooperative. To support our cooperative even more, you may voluntarily purchase more shares."
-msgstr "Número de ações que gostaria de comprar. O preço de uma ação é EUR %(share_price)s. Deve comprar pelo menos uma ação para se tornar membro da cooperativa. Para apoiar ainda mais a nossa cooperativa, pode comprar voluntariamente mais ações."
+msgstr ""
+"Número de títulos que gostarias de adquirir. O preço de uma título é EUR "
+"%(share_price)s. Deve comprar pelo menos 3 títulos para te tornares membro "
+"da secção consumo. Para apoiares ainda mais a nossa cooperativa, pode "
+"adquirir voluntariamente mais títulos."
 
 #: coop/forms.py:120
+#, fuzzy
 msgid "I would like to join the membership list as an investing member (= sponsoring member)"
-msgstr "Gostaria de entrar na lista de membros como membro investidor (= membro patrocinador)"
+msgstr ""
+"Gostaria de entrar na lista de membros como membro investidor (= membro "
+"patrocinador)"
 
 #: coop/forms.py:123
+#, fuzzy
 msgid "<b>Note</b>: Investing members are sponsoring members. They have no voting rights in the General Assembly and cannot use the services of the cooperative that are exclusive to ordinary members. "
-msgstr "<b>Nota</b>: Os membros investidores são membros patrocinadores. Não têm direito de voto na Assembleia Geral e não podem utilizar os serviços da cooperativa exclusivos para membros ordinários."
+msgstr ""
+"<b>Nota</b>: Os membros investidores são membros patrocinadores. Não têm "
+"direito de voto na Assembleia Geral e não podem utilizar os serviços da "
+"cooperativa exclusivos para membros ordinários. "
 
 #: coop/forms.py:233
+#, fuzzy
 msgid "Usually, the credited member is the same as the paying member. Only if a person if gifting another person a share through the matching program, then the fields can be different."
-msgstr "Normalmente, o membro creditado é o mesmo que o membro pagante. Apenas quando uma pessoa oferece uma ação a outra através do programa de correspondência, os campos podem ser diferentes."
+msgstr ""
+"Normalmente, o membro creditado é o mesmo que o membro pagante. Apenas "
+"quando uma pessoa oferece uma ação a outra através do programa de "
+"correspondência, os campos podem ser diferentes."
 
 #: coop/forms.py:268
 msgid "The member stays active"
 msgstr "O membro permanece ativo"
 
 #: coop/forms.py:270
+#, fuzzy
 msgid "The member becomes investing"
 msgstr "O membro torna-se investidor"
 
@@ -644,11 +662,12 @@ msgstr "Por favor, não mais de 1000 caracteres."
 
 #: coop/forms.py:278
 msgid "Member to resign"
-msgstr "Membro a demitir-se"
+msgstr "Membro que vai sair"
 
 #: coop/forms.py:281
+#, fuzzy
 msgid "Transferring share(s) to"
-msgstr "Transferindo ação(ões) para"
+msgstr "Transferindo título(s) para"
 
 #: coop/forms.py:287
 msgid "Member status"
@@ -656,39 +675,48 @@ msgstr "Estado do membro"
 
 #: coop/forms.py:291
 msgid "In the case where the member wants their money back, they stay a member for 3 more years. However, it is very likely that the member doesn't want to be active anymore. If they haven't explicitly mentioned it, please ask them if we can switch them to investing."
-msgstr "No caso de o membro querer o reembolso, permanece como membro por mais 3 anos. No entanto, é muito provável que o membro não queira mais estar ativo. Se não tiverem mencionado explicitamente, pergunte se podemos convertê-lo em membro investidor."
+msgstr ""
 
 #: coop/forms.py:316
 msgid "Send confirmation mails"
 msgstr "Enviar e-mails de confirmação"
 
 #: coop/forms.py:320
+#, fuzzy
 msgid "If enabled, the resigned member and if applicable the member receiving shares will receive confirmation emails."
-msgstr "Se ativado, o membro demissionário e, se aplicável, o membro que receber ações receberão e-mails de confirmação."
+msgstr ""
+"Se ativado, o membro demissionário e, se aplicável, o membro que recebe os "
+"títulos receberão e-mails de confirmação."
 
 #: coop/forms.py:355
 msgid "Please pick an option"
-msgstr "Por favor, escolha uma opção"
+msgstr "Por favor, escolhe uma opção"
 
 #: coop/forms.py:367
 msgid "This member is already resigned."
-msgstr "Este membro já se demitiu."
+msgstr "Este membro já saiu."
 
 #: coop/forms.py:379
+#, fuzzy
 msgid "Please select the member that the shares should be transferred to."
-msgstr "Por favor, selecione o membro para quem as ações devem ser transferidas."
+msgstr ""
+"Por favor, seleciona o membro para quem os títulos devem ser transferidos."
 
 #: coop/forms.py:392
 msgid "If the shares don't get transferred to another member, this field should be empty."
-msgstr "Se as ações não forem transferidas para outro membro, este campo deve ficar vazio."
+msgstr ""
+"Se os títulos não forem transferidos para outro membro, este campo deve "
+"ficar vazio."
 
 #: coop/forms.py:405
 msgid "Sender and receiver of transferring the share(s) cannot be the same."
-msgstr "O remetente e o destinatário da transferência de ações não podem ser a mesma pessoa."
+msgstr ""
+"O remetente e o destinatário da transferência de títulos não podem ser a "
+"mesma pessoa."
 
 #: coop/forms.py:417
 msgid "Cannot pay out, because shares have been gifted."
-msgstr "Não é possível pagar, porque as ações foram doadas."
+msgstr "Não é possível obter reembolso, porque os títulos foram doados."
 
 #: coop/models.py:54
 msgid "Is company"
@@ -718,16 +746,17 @@ msgstr "É membro investidor"
 #: coop/templates/coop/draftuser_detail.html:176
 #: coop/templates/coop/tags/user_coop_share_ownership_list_tag.html:48
 #: coop/templates/coop/tags/user_coop_share_ownership_list_tag.html:168
+#, fuzzy
 msgid "Ratenzahlung"
 msgstr "Pagamento em prestações"
 
 #: coop/models.py:92 coop/models.py:470
 msgid "Attended Welcome Session"
-msgstr "Participou na sessão de boas-vindas"
+msgstr "Participou na sessão informativa"
 
 #: coop/models.py:95
 msgid "Is willing to gift a share"
-msgstr "Está disposto a doar uma ação"
+msgstr "Está disposto a doar títulos"
 
 #: coop/models.py:200
 msgid "Cannot be a company and have a Tapir account"
@@ -753,17 +782,20 @@ msgstr "Ativo"
 
 #: coop/models.py:371
 msgid "Paused"
-msgstr "Pausado"
+msgstr "Em ausência temporária"
 
 #: coop/models.py:466
+#, fuzzy
 msgid "Investing member"
 msgstr "Membro investidor"
 
 #: coop/models.py:473
+#, fuzzy
 msgid "Signed Beteiligungserklärung"
 msgstr "Declaração de participação assinada"
 
 #: coop/models.py:475
+#, fuzzy
 msgid "Paid Entrance Fee"
 msgstr "Taxa de adesão paga"
 
@@ -780,22 +812,26 @@ msgid "Last name must be set."
 msgstr "O apelido deve ser definido."
 
 #: coop/models.py:540
+#, fuzzy
 msgid "Membership agreement must be signed."
 msgstr "O contrato de adesão deve ser assinado."
 
 #: coop/models.py:542
+#, fuzzy
 msgid "Amount of requested shares must be positive."
-msgstr "A quantidade de ações solicitadas deve ser positiva."
+msgstr "O número de títulos solicitados deve ser positivo."
 
 #: coop/models.py:544
 msgid "Member already created."
 msgstr "Membro já criado."
 
 #: coop/models.py:571
+#, fuzzy
 msgid "Paying member"
-msgstr "Membro pagante"
+msgstr "Membro ativo"
 
 #: coop/models.py:579
+#, fuzzy
 msgid "Credited member"
 msgstr "Membro creditado"
 
@@ -816,16 +852,18 @@ msgid "Created by"
 msgstr "Criado por"
 
 #: coop/models.py:775
+#, fuzzy
 msgid "The cooperative buys the shares back from the member"
-msgstr "A cooperativa recompra as ações do membro"
+msgstr "A cooperativa volta a comprar os títulos do membro"
 
 #: coop/models.py:778
 msgid "The member gifts the shares to the cooperative"
-msgstr "O membro doa as ações à cooperativa"
+msgstr "O membro doa os títulos à cooperativa"
 
 #: coop/models.py:780
+#, fuzzy
 msgid "The shares get transferred to another member"
-msgstr "As ações são transferidas para outro membro"
+msgstr "Os títulos são transferidos para outro membro"
 
 #: coop/models.py:783
 msgid "Financial reasons"
@@ -840,20 +878,25 @@ msgid "Distance"
 msgstr "Distância"
 
 #: coop/models.py:786
+#, fuzzy
 msgid "Strategic orientation of SuperCoop"
-msgstr "Orientação estratégica da SuperCoop"
+msgstr "Orientação estratégica da Cooperativa"
 
 #: coop/models.py:787
 msgid "Other"
 msgstr "Outro"
 
 #: coop/models.py:792
+#, fuzzy
 msgid "Shareowner"
-msgstr "Acionista"
+msgstr "Cooperante"
 
 #: coop/models.py:811
+#, fuzzy
 msgid "Leave this empty if the resignation type is not a transfer to another member"
-msgstr "Deixe este campo vazio se o tipo de demissão não for uma transferência para outro membro"
+msgstr ""
+"Deixa este campo vazio se o tipo de demissão não for uma transferência para "
+"outro membro"
 
 #: coop/templates/coop/about.html:5 coop/templates/coop/about.html:11
 msgid "About Tapir"
@@ -916,6 +959,7 @@ msgid "Registration confirmed"
 msgstr "Registo confirmado"
 
 #: coop/templates/coop/draftuser_confirm_registration.html:8
+#, fuzzy
 msgid ""
 "\n"
 "            <p>Registration successful! Congratulations!</p>\n"
@@ -923,19 +967,13 @@ msgid ""
 "            <p>Once we have received both your Beteiligungserklärung and the corresponding payment, we'll send you the confirmation of your membership.</p>\n"
 "            <p>We will also create for you an account for this website and for the wiki.</p>\n"
 "            "
-msgstr ""
-"\n"
-"            <p>Registo bem-sucedido! Parabéns!</p>\n"
-"            <p>Acabámos de lhe enviar por e-mail a confirmação da sua pré-inscrição com a declaração de participação (Beteiligungserklärung) já preenchida com as suas informações. Só tem de a imprimir e enviar-nos por correio ou digitalizar e enviar por e-mail.</p>\n"
-"            <p>Assim que recebermos tanto a sua declaração de participação como o pagamento correspondente, enviaremos a confirmação da sua adesão.</p>\n"
-"            <p>Também criaremos uma conta para si neste site e na wiki.</p>\n"
-"            "
+msgstr " "
 
 #: coop/templates/coop/draftuser_detail.html:8
 #: coop/templates/coop/draftuser_detail.html:78
 #: coop/templates/coop/draftuser_detail.html:127
 msgid "Applicant"
-msgstr "Candidato"
+msgstr "Candidato(a)"
 
 #: coop/templates/coop/draftuser_detail.html:49
 msgid "Confirm member creation"
@@ -952,8 +990,10 @@ msgid ""
 msgstr ""
 "\n"
 "                            <p>\n"
-"                                Foram encontrados membros com informações semelhantes à pessoa que está a tentar criar.\n"
-"                                Por favor, verifique cuidadosamente que não se trata de um duplicado.\n"
+"                                Foram encontrados membros com informações "
+"semelhantes à pessoa que está a tentar criar.\n"
+"                                Por favor, verifica cuidadosamente que não "
+"se trata de um duplicado.\n"
 "                            </p>\n"
 "                        "
 
@@ -984,14 +1024,15 @@ msgstr "Tipo de membro"
 
 #: coop/templates/coop/draftuser_detail.html:186
 msgid "Shares requested"
-msgstr "Ações solicitadas"
+msgstr "Títulos solicitados"
 
 #: coop/templates/coop/draftuser_detail.html:190
 #: coop/templates/coop/tags/user_coop_share_ownership_list_tag.html:53
 msgid "Welcome Session"
-msgstr "Sessão de boas-vindas"
+msgstr "Sessão informativa"
 
 #: coop/templates/coop/draftuser_detail.html:208
+#, fuzzy
 msgid "Beteiligungserklärung"
 msgstr "Declaração de participação"
 
@@ -1034,19 +1075,20 @@ msgid "Clear all filters"
 msgstr "Limpar todos os filtros"
 
 #: coop/templates/coop/draftuser_list.html:63
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "                                            Filtered %(filtered)s of %(total)s\n"
 "                                        "
 msgstr ""
 "\n"
-"                                            Filtrados %(filtered)s de %(total)s\n"
+"                                            Filtrados %(filtered)s de "
+"%(total)s\n"
 "                                        "
 
 #: coop/templates/coop/draftuser_register_form.default.html:27
 msgid "Create Applicant"
-msgstr "Criar candidato"
+msgstr "Criar candidato(a)"
 
 #: coop/templates/coop/draftuser_register_form.default.html:29
 #: coop/templates/coop/draftuser_register_form.html:29
@@ -1060,10 +1102,10 @@ msgstr "Registar"
 #: coop/templates/coop/draftuser_register_form.html:27
 #: coop/views/draftuser.py:58 coop/views/draftuser.py:59
 msgid "Create applicant"
-msgstr "Criar candidato"
+msgstr "Criar candidato(a)"
 
 #: coop/templates/coop/email/accounting_recap.body.default.html:5
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>\n"
@@ -1081,14 +1123,16 @@ msgid ""
 msgstr ""
 "\n"
 "        <p>\n"
-"            Olá equipa de Contabilidade, olá Member Office,\n"
+"            Olá equipa GTT-Membros,\n"
 "        </p>\n"
 "        <p>\n"
 "            Este é o resumo contabilístico do Tapir para a semana passada.\n"
 "        </p>\n"
 "        <p>\n"
-"            Foram criados %(num_new_members)s novos membros. Para esses novos membros, foram criadas %(total_num_shares_new_members)s ações.<br />\n"
-"            Adicionalmente, foram criadas %(total_num_shares_existing_members)s ações para membros existentes.\n"
+"            Foram criados %(num_new_members)s novos membros. Para esses "
+"novos membros, foram criadas %(total_num_shares_new_members)s ações.<br />\n"
+"            Adicionalmente, foram criados "
+"%(total_num_shares_existing_members)s títulos para membros existentes.\n"
 "        </p>\n"
 "    "
 
@@ -1100,17 +1144,21 @@ msgstr "Novos membros"
 #: coop/templates/coop/email/accounting_recap.body.default.html:26
 #: coop/templates/coop/email/accounting_recap.body.default.html:38
 msgid "share(s)"
-msgstr "ação(ões)"
+msgstr "título(s)"
 
 #: coop/templates/coop/email/accounting_recap.body.default.html:33
 msgid "New shares for existing members upload only after approval in Duo"
-msgstr "Novas ações para membros existentes são carregadas apenas após aprovação no Duo"
+msgstr ""
 
 #: coop/templates/coop/email/accounting_recap.body.default.html:47
+#, fuzzy
 msgid "This email is send automatically every Sunday. Contact the Tapir team on Slack if you have any question."
-msgstr "Este e-mail é enviado automaticamente todos os domingos. Contacte a equipa do Tapir no Slack se tiver alguma questão."
+msgstr ""
+"Este e-mail é enviado automaticamente todos os domingos. Contacta a Helpdesk "
+"do Tapir se tiveres alguma questão."
 
 #: coop/templates/coop/email/accounting_recap.subject.default.html:2
+#, fuzzy
 msgid ""
 "\n"
 "    Accounting recap\n"
@@ -1119,7 +1167,7 @@ msgstr ""
 "    Resumo contabilístico\n"
 
 #: coop/templates/coop/email/co_purchaser_updated.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hello %(display_name_short)s,</p>\n"
@@ -1143,24 +1191,28 @@ msgstr ""
 "\n"
 "        <p>Olá %(display_name_short)s,</p>\n"
 "        <p>\n"
-"            Este é um e-mail automático da SuperCoop. Gostaríamos de informar que um co-comprador foi\n"
+"            Este é um e-mail automático da Rizoma. Gostaríamos de informar "
+"que um co-comprador foi\n"
 "            adicionado à sua conta Tapir.\n"
 "        </p>\n"
 "        <p>\n"
-"            A partir de agora, %(co_purchaser_name)s pode fazer compras na loja usando o seu número de membro.\n"
+"            A partir de agora, %(co_purchaser_name)s pode fazer compras na "
+"loja usando o teu número de membro.\n"
 "        </p>\n"
 "        <p>\n"
-"            Se isto for um erro e não corresponder ao seu pedido, envie por favor um\n"
-"            <a href=\"mailto:%(email_address_member_office)s\">e-mail ao Member Office</a> a informar-nos.\n"
+"            Se isto for um erro e não corresponder ao seu pedido, envia por "
+"favor um\n"
+"            <a href=\"mailto:%(email_address_member_office)s\">e-mail ao GTT-"
+"membros</a> a informar-nos.\n"
 "        </p>\n"
 "        <p>\n"
 "            Saudações cooperativas,<br />\n"
-"            O Member Office\n"
+"            GTT-membros\n"
 "        </p>\n"
 "    "
 
 #: coop/templates/coop/email/extra_shares_bought.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hello %(display_name_short)s,</p>\n"
@@ -1174,25 +1226,26 @@ msgid ""
 msgstr ""
 "\n"
 "        <p>Olá %(display_name_short)s,</p>\n"
-"        <p>Encontra em anexo a confirmação de que adquiriu %(num_shares)s ações adicionais.</p>\n"
-"        <p>Muito obrigado pelo seu apoio contínuo!</p>\n"
+"        <p>Encontras em anexo a confirmação de que adquiriste %(num_shares)s "
+"títulos adicionais.</p>\n"
+"        <p>Muito obrigado pelo teu apoio contínuo!</p>\n"
 "        <p>\n"
 "            Saudações cooperativas<br />\n"
-"            O Conselho da SuperCoop (Vorstand)<br />\n"
+"            O Conselho da Rizoma (Vorstand)<br />\n"
 "        </p>\n"
 "    "
 
 #: coop/templates/coop/email/extra_shares_bought.subject.html:2
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "    Confirmation acquisition of additional shares in %(coop_name)s\n"
 msgstr ""
 "\n"
-"    Confirmação da aquisição de ações adicionais em %(coop_name)s\n"
+"    Confirmação da aquisição de títulos adicionais em %(coop_name)s\n"
 
 #: coop/templates/coop/email/membership_confirmation.active.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hello %(display_name)s,</p>\n"
@@ -1409,25 +1462,40 @@ msgstr ""
 "\n"
 "        <p>Olá %(display_name)s,</p>\n"
 "        <p>\n"
-"            Bem-vindo(a) como membro oficial da nossa cooperativa, %(coop_full_name)s! Em anexo encontra os detalhes da\n"
-"            confirmação da sua adesão. Estamos muito felizes por tê-lo(a) connosco e por fazer a SuperCoop crescer consigo!\n"
+"            Bem-vindo(a) como membro oficial da nossa cooperativa, "
+"%(coop_full_name)s! Em anexo encontra os detalhes da\n"
+"            confirmação da sua adesão. Estamos muito felizes por tê-lo(a) "
+"connosco e por fazer a SuperCoop crescer consigo!\n"
 "        </p>\n"
 "        <p>\n"
-"            Se ainda não o fez, por favor transfira o montante das suas ações juntamente com a taxa de admissão de 10 €\n"
+"            Se ainda não o fez, por favor transfira o montante das suas "
+"ações juntamente com a taxa de admissão de 10 €\n"
 "            para a nossa conta DE98430609671121379000.\n"
-"            É também importante concluir a formação online de higiene da METRO antes de iniciar o seu primeiro turno na Coop.\n"
+"            É também importante concluir a formação online de higiene da "
+"METRO antes de iniciar o seu primeiro turno na Coop.\n"
 "            Pode encontrar todas as informações sobre isto no ponto 3.\n"
 "        </p>\n"
-"        <p>Veja abaixo os pontos essenciais para arrancar com a sua adesão à SuperCoop:</p>\n"
+"        <p>Veja abaixo os pontos essenciais para arrancar com a sua adesão à "
+"SuperCoop:</p>\n"
 "        <h2>1. Member Office</h2>\n"
-"        <p>O Member Office é o ponto de apoio aos membros para tudo o que é SuperCoop!</p>\n"
+"        <p>O Member Office é o ponto de apoio aos membros para tudo o que é "
+"SuperCoop!</p>\n"
 "        <p>\n"
-"            Visite o Member Office para se inscrever no seu primeiro turno (ou indicar que tem direito a uma <a href=\"https://docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.rjj2v2m92fqa\">isenção\n"
-"            de trabalho</a>). Criarão uma conta para si no Tapir, o nosso sistema online de gestão de turnos, e orientarão\n"
+"            Visite o Member Office para se inscrever no seu primeiro turno ("
+"ou indicar que tem direito a uma <a href=\"https://docs.google.com/document/"
+"d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.rjj2v2m92fqa\">"
+"isenção\n"
+"            de trabalho</a>). Criarão uma conta para si no Tapir, o nosso "
+"sistema online de gestão de turnos, e orientarão\n"
 "            os passos para escolher o seu turno e grupo de trabalho.\n"
 "        </p>\n"
 "        <div>\n"
-"            Para questões gerais sobre a sua adesão, contacte o Member Office por e-mail (<a href=\"mailto:%(contact_email_address)s\">%(contact_email_address)s</a>) ou visitando a <a href=\"https://www.google.com/maps/place/SuperCoop+Berlin/@52.553371,13.3585897,15z/data=!4m5!3m4!1s0x0:0x72e80db955fa8d3!8m2!3d52.5533091!4d13.3586012\">SuperCoop</a>.\n"
+"            Para questões gerais sobre a sua adesão, contacte o Member "
+"Office por e-mail (<a href=\"mailto:%(contact_email_address)s\""
+">%(contact_email_address)s</a>) ou visitando a <a href=\"https://"
+"www.google.com/maps/place/SuperCoop+Berlin/@52.553371,13.3585897,15z/"
+"data=!4m5!3m4!1s0x0:0x72e80db955fa8d3!8m2!3d52.5533091!4d13.3586012\""
+">SuperCoop</a>.\n"
 "            Horário de funcionamento:\n"
 "            <ul>\n"
 "                <li>Segunda a sexta: 16:30 – 19:30</li>\n"
@@ -1436,96 +1504,162 @@ msgstr ""
 "        </div>\n"
 "        <h2>2. <a href=\"https://members.supercoop.de/\">Tapir</a></h2>\n"
 "        <p>\n"
-"            O <a href=\"https://members.supercoop.de/\">Tapir</a> é o nosso sistema de gestão de turnos, criado por e para os membros\n"
-"            da SuperCoop! Aí pode inscrever-se em turnos e ver informações adicionais sobre a sua adesão, como o número de ações que possui.\n"
+"            O <a href=\"https://members.supercoop.de/\">Tapir</a> é o nosso "
+"sistema de gestão de turnos, criado por e para os membros\n"
+"            da SuperCoop! Aí pode inscrever-se em turnos e ver informações "
+"adicionais sobre a sua adesão, como o número de ações que possui.\n"
 "        </p>\n"
 "        <div>\n"
 "            No Tapir encontrará também ligações para:\n"
 "            <ul>\n"
-"                <li>A semana atual no calendário ABCD (e o ABCD para o resto do ano),</li>\n"
+"                <li>A semana atual no calendário ABCD (e o ABCD para o resto "
+"do ano),</li>\n"
 "                <li>wiki,</li>\n"
 "                <li>manual do membro,</li>\n"
 "                <li>horários de abertura,</li>\n"
 "                <li>contactos do Member Office</li>\n"
-"                <li>e estatísticas sobre turnos e a cooperativa em geral.</li>\n"
+"                <li>e estatísticas sobre turnos e a cooperativa em "
+"geral.</li>\n"
 "            </ul>\n"
 "        </div>\n"
 "        <p>\n"
-"            Para criar um perfil no Tapir, visite o Member Office no supermercado (ver horário acima). Não se esqueça de\n"
-"            <a href=\"https://docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.aal5b9whb07w\">adicionar um co-comprador</a>\n"
+"            Para criar um perfil no Tapir, visite o Member Office no "
+"supermercado (ver horário acima). Não se esqueça de\n"
+"            <a href=\"https://docs.google.com/document/d/"
+"19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.aal5b9whb07w\""
+">adicionar um co-comprador</a>\n"
 "            à sua conta!\n"
 "        </p>\n"
 "        <p>\n"
-"            Depois de criado o seu perfil, receberá um e-mail de confirmação com uma ligação para definir a palavra-passe.\n"
-"            Poderá então usar as mesmas credenciais para aceder à <a href=\"https://wiki.supercoop.de/wiki/Main_Page\">Wiki da SuperCoop</a>.\n"
+"            Depois de criado o seu perfil, receberá um e-mail de confirmação "
+"com uma ligação para definir a palavra-passe.\n"
+"            Poderá então usar as mesmas credenciais para aceder à <a href="
+"\"https://wiki.supercoop.de/wiki/Main_Page\">Wiki da SuperCoop</a>.\n"
 "        </p>\n"
-"        <p><strong>Dica:</strong> guarde nos favoritos o <a href=\"https://members.supercoop.de/\">link do Tapir</a> para o encontrar facilmente no futuro!</p>\n"
+"        <p><strong>Dica:</strong> guarde nos favoritos o <a href="
+"\"https://members.supercoop.de/\">link do Tapir</a> para o encontrar "
+"facilmente no futuro!</p>\n"
 "        <h2>3. Formação de Higiene</h2>\n"
 "        <p>\n"
-"            Os novos membros devem concluir a formação online de higiene da METRO ANTES do primeiro turno:\n"
-"            <a href=\"https://kw.my/jEM8PK/#/\">https://kw.my/jEM8PK/#/</a>. A formação demora cerca de 30 minutos e termina com\n"
-"            um breve questionário. Se responder corretamente a 80%% das perguntas, recebe um certificado. Mostre-o a um colaborador no seu primeiro turno.\n"
+"            Os novos membros devem concluir a formação online de higiene da "
+"METRO ANTES do primeiro turno:\n"
+"            <a href=\"https://kw.my/jEM8PK/#/\">https://kw.my/jEM8PK/#/</a>. "
+"A formação demora cerca de 30 minutos e termina com\n"
+"            um breve questionário. Se responder corretamente a 80%% das "
+"perguntas, recebe um certificado. Mostre-o a um colaborador no seu primeiro "
+"turno.\n"
 "        </p>\n"
 "        <p>\n"
-"            No primeiro turno, o responsável de equipa ou um colaborador fará uma introdução adicional de 10 minutos e\n"
-"            mostrará os pontos e regras mais importantes da loja. Se não conseguir fazer a formação online em casa,\n"
+"            No primeiro turno, o responsável de equipa ou um colaborador "
+"fará uma introdução adicional de 10 minutos e\n"
+"            mostrará os pontos e regras mais importantes da loja. Se não "
+"conseguir fazer a formação online em casa,\n"
 "            pode realizá-la no nosso Welcome Desk durante o seu turno.\n"
 "        </p>\n"
 "        <h2>4. Cartão de Membro</h2>\n"
 "        <p>\n"
-"            O seu Cartão de Membro pode ser ativado através da sua conta Tapir. Os cartões são baseados em consentimento, pois\n"
-"            utilizamo-los para recolher dados sobre o valor total das compras e a frequência de compra. Usamos esta\n"
-"            informação para apoiar o planeamento financeiro e projetar receitas futuras, e para perceber o impacto de medidas\n"
-"            no sortido. Se a regularidade ou o total das compras diminuir, investigamos. Assim, o cartão ajuda-nos a\n"
+"            O seu Cartão de Membro pode ser ativado através da sua conta "
+"Tapir. Os cartões são baseados em consentimento, pois\n"
+"            utilizamo-los para recolher dados sobre o valor total das "
+"compras e a frequência de compra. Usamos esta\n"
+"            informação para apoiar o planeamento financeiro e projetar "
+"receitas futuras, e para perceber o impacto de medidas\n"
+"            no sortido. Se a regularidade ou o total das compras diminuir, "
+"investigamos. Assim, o cartão ajuda-nos a\n"
 "            compreender melhor as necessidades dos membros!\n"
 "        </p>\n"
 "        <p>\n"
-"            Saiba mais na wiki: <a href=\"https://wiki.supercoop.de/wiki/Mitgliederkarte\">https://wiki.supercoop.de/wiki/Mitgliederkarte</a>.\n"
-"            Dúvidas sobre proteção de dados: <a href=\"mailto:datenschutz-supercoop@posteo.de\">datenschutz-supercoop@posteo.de</a>.\n"
+"            Saiba mais na wiki: <a href="
+"\"https://wiki.supercoop.de/wiki/Mitgliederkarte\">https://wiki.supercoop.de/"
+"wiki/Mitgliederkarte</a>.\n"
+"            Dúvidas sobre proteção de dados: <a href="
+"\"mailto:datenschutz-supercoop@posteo.de\">datenschutz-"
+"supercoop@posteo.de</a>.\n"
 "        </p>\n"
 "        <h3>Como funciona:</h3>\n"
 "        <div>\n"
 "            <ol>\n"
-"                <li>Inicie sessão no seu perfil Tapir: <a href=\"https://members.supercoop.de/\">https://members.supercoop.de/</a></li>\n"
-"                <li>Desça a página e dê o seu consentimento (pode remover a qualquer momento com um clique).</li>\n"
-"                <li>Após consentir, verá um código de barras criado especialmente para si.</li>\n"
-"                <li>Passo final: lembre-se de o digitalizar na caixa! Pode mostrar no telemóvel, descarregar PDF, capturar ecrã ou imprimir (imprimimos na loja se necessário!).</li>\n"
+"                <li>Inicie sessão no seu perfil Tapir: <a href="
+"\"https://members.supercoop.de/\">https://members.supercoop.de/</a></li>\n"
+"                <li>Desça a página e dê o seu consentimento (pode remover a "
+"qualquer momento com um clique).</li>\n"
+"                <li>Após consentir, verá um código de barras criado "
+"especialmente para si.</li>\n"
+"                <li>Passo final: lembre-se de o digitalizar na caixa! Pode "
+"mostrar no telemóvel, descarregar PDF, capturar ecrã ou imprimir (imprimimos "
+"na loja se necessário!).</li>\n"
 "            </ol>\n"
 "        </div>\n"
 "        <p>\n"
-"            Por fim, pode também carregar saldo no seu cartão de membro e pagar as compras com ele! Evita taxas de transação\n"
-"            para si e para a coop e pode fazê-lo diretamente na caixa (Kasse)! 🎉\n"
+"            Por fim, pode também carregar saldo no seu cartão de membro e "
+"pagar as compras com ele! Evita taxas de transação\n"
+"            para si e para a coop e pode fazê-lo diretamente na caixa (Kasse)"
+"! 🎉\n"
 "        </p>\n"
 "        <h2>5. Grupos de Trabalho</h2>\n"
-"        <p>O seu <strong>Grupo de Trabalho</strong> indica <strong>que tipo de trabalho</strong> faz na Coop.</p>\n"
-"        <p><strong>Nota:</strong> o mais importante é escolher um horário de turno que possa cumprir regularmente. Sendo auto-organizados, contamos com a responsabilidade de cada membro.</p>\n"
+"        <p>O seu <strong>Grupo de Trabalho</strong> indica <strong>que tipo "
+"de trabalho</strong> faz na Coop.</p>\n"
+"        <p><strong>Nota:</strong> o mais importante é escolher um horário de "
+"turno que possa cumprir regularmente. Sendo auto-organizados, contamos com a "
+"responsabilidade de cada membro.</p>\n"
 "        <div>\n"
-"            Regra geral, os membros devem completar os primeiros seis turnos num dos grupos centrais:\n"
+"            Regra geral, os membros devem completar os primeiros seis turnos "
+"num dos grupos centrais:\n"
 "            <ul>\n"
-"                <li><strong>Receção e Reposição</strong> (receber entregas, manter prateleiras e arcas abastecidas, verificar validades – Rote Karte não necessária)</li>\n"
+"                <li><strong>Receção e Reposição</strong> (receber entregas, "
+"manter prateleiras e arcas abastecidas, verificar validades – Rote Karte não "
+"necessária)</li>\n"
 "                <li><strong>Caixa</strong></li>\n"
-"                <li><strong>Welcome Desk</strong> (saudar visitantes, verificar números de membro e responder a perguntas)</li>\n"
+"                <li><strong>Welcome Desk</strong> (saudar visitantes, "
+"verificar números de membro e responder a perguntas)</li>\n"
 "                <li><strong>Manutenção</strong> (limpeza após o fecho)</li>\n"
 "            </ul>\n"
 "        </div>\n"
-"        <p>Os grupos e tarefas adaptam-se dinamicamente; pode mudar de grupo quando necessário.</p>\n"
-"        <p>Além do turno regular, há muitas formas de se envolver. Reunimos os <a href=\"https://wiki.supercoop.de/wiki/Working_Groups\">grupos adicionais</a> na wiki.</p>\n"
+"        <p>Os grupos e tarefas adaptam-se dinamicamente; pode mudar de grupo "
+"quando necessário.</p>\n"
+"        <p>Além do turno regular, há muitas formas de se envolver. Reunimos "
+"os <a href=\"https://wiki.supercoop.de/wiki/Working_Groups\">grupos "
+"adicionais</a> na wiki.</p>\n"
 "        <h2>6. Manual do Membro</h2>\n"
-"        <p>Antes de escrever ao Member Office, consulte o <a href=\"https://docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw\">manual do membro</a> com tudo o que precisa de saber.</p>\n"
+"        <p>Antes de escrever ao Member Office, consulte o <a href=\"https://"
+"docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw\""
+">manual do membro</a> com tudo o que precisa de saber.</p>\n"
 "        <h2>7. SuperCoop Wiki</h2>\n"
-"        <p>Outra ótima fonte é a <a href=\"https://wiki.supercoop.de/wiki/Main_Page\">Wiki da SuperCoop</a>. É um recurso vivo que todos podemos editar. Comece pela página <a href=\"https://wiki.supercoop.de/wiki/Getting_started_on_Wiki_-_Mit_dem_Wiki_arbeiten\">getting started</a>.</p>\n"
+"        <p>Outra ótima fonte é a <a href="
+"\"https://wiki.supercoop.de/wiki/Main_Page\">Wiki da SuperCoop</a>. É um "
+"recurso vivo que todos podemos editar. Comece pela página <a href=\"https://"
+"wiki.supercoop.de/wiki/Getting_started_on_Wiki_-_Mit_dem_Wiki_arbeiten\""
+">getting started</a>.</p>\n"
 "        <h2>8. Plenário</h2>\n"
-"        <p>Todos os membros são convidados ao <a href=\"https://wiki.supercoop.de/wiki/Plenum\">plenário</a> (atualmente online quando há decisões) para votar e debater. Datas e ligações na wiki e newsletter quinzenal.</p>\n"
+"        <p>Todos os membros são convidados ao <a href="
+"\"https://wiki.supercoop.de/wiki/Plenum\">plenário</a> (atualmente online "
+"quando há decisões) para votar e debater. Datas e ligações na wiki e "
+"newsletter quinzenal.</p>\n"
 "        <h2>9. Newsletter</h2>\n"
-"        <p>Quarta-feira é dia de SuperCoop! De duas em duas semanas recebe novidades no seu e-mail.</p>\n"
+"        <p>Quarta-feira é dia de SuperCoop! De duas em duas semanas recebe "
+"novidades no seu e-mail.</p>\n"
 "        <h2>10. Slack</h2>\n"
-"        <p>Usamos o Slack para comunicação entre grupos, projetos e info geral. Registo gratuito e uso via browser ou app. <a href=\"https://join.slack.com/t/supercoopberlin/shared_invite/zt-o5mrrdh0-RdsN0dhlz8qyCCl9clLQYA\">Junte-se aqui!</a> Se precisar de ajuda, contacte o Member Office.</p>\n"
+"        <p>Usamos o Slack para comunicação entre grupos, projetos e info "
+"geral. Registo gratuito e uso via browser ou app. <a href=\"https://"
+"join.slack.com/t/supercoopberlin/shared_invite/zt-o5mrrdh0-"
+"RdsN0dhlz8qyCCl9clLQYA\">Junte-se aqui!</a> Se precisar de ajuda, contacte o "
+"Member Office.</p>\n"
 "        <h2>11. Contacto Direto</h2>\n"
-"        <p>Para contactar diretamente o Vorstand use <a href=\"mailto:%(management_email_address)s\">%(management_email_address)s</a>.</p>\n"
-"        <p>Para contactar o Aufsichtsrat (conselho fiscal), use <a href=\"mailto:%(supervisors_email_address)s\">%(supervisors_email_address)s</a>. Para quaisquer assuntos relevantes aos membros.</p>\n"
+"        <p>Para contactar diretamente o Vorstand use <a href="
+"\"mailto:%(management_email_address)s\">%(management_email_address)s</a>.</p>"
+"\n"
+"        <p>Para contactar o Aufsichtsrat (conselho fiscal), use <a href="
+"\"mailto:%(supervisors_email_address)s\">%(supervisors_email_address)s</a>. "
+"Para quaisquer assuntos relevantes aos membros.</p>\n"
 "        <h2>12. Canais de Redes Sociais</h2>\n"
-"        <p>Também estamos na <a href=\"https://supercoop.de\">Internet</a>! Siga-nos no <a href=\"https://www.facebook.com/SuperCoopBerlin/\">Facebook</a>, <a href=\"https://www.instagram.com/supercoopberlin/\">Instagram</a>, <a href=\"https://www.linkedin.com/company/supercoopberlin\">LinkedIn</a> ou <a href=\"https://nebenan.de/places/organizations/3885\">Nebenan.de</a> e espalhe a palavra.</p>\n"
-"        <p>Estamos muito contentes por se juntar a nós — vemos-nos em breve na wiki, Slack, no Plenário ou nos Osram-Höfe!</p>\n"
+"        <p>Também estamos na <a href=\"https://supercoop.de\">Internet</a>! "
+"Siga-nos no <a href=\"https://www.facebook.com/SuperCoopBerlin/\">Facebook</"
+"a>, <a href=\"https://www.instagram.com/supercoopberlin/\">Instagram</a>, <a "
+"href=\"https://www.linkedin.com/company/supercoopberlin\">LinkedIn</a> ou <a "
+"href=\"https://nebenan.de/places/organizations/3885\">Nebenan.de</a> e "
+"espalhe a palavra.</p>\n"
+"        <p>Estamos muito contentes por se juntar a nós — vemos-nos em breve "
+"na wiki, Slack, no Plenário ou nos Osram-Höfe!</p>\n"
 "        <p>\n"
 "            Saudações cooperativas,<br />\n"
 "            O Conselho da SuperCoop\n"
@@ -1542,7 +1676,7 @@ msgstr ""
 "    Bem-vindo(a) à %(organization_name)s!\n"
 
 #: coop/templates/coop/email/membership_confirmation.investing.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "    <p>Dear %(display_name)s,</p>\n"
@@ -1567,14 +1701,19 @@ msgstr ""
 "\n"
 "    <p>Caro(a) %(display_name)s,</p>\n"
 "    <p>\n"
-"    Bem-vindo(a) como membro investidor oficial de %(coop_full_name)s! Ao subscrever %(num_shares)s ação(ões) da cooperativa,\n"
-"    decidiu moldar o sistema alimentar connosco e com muitos outros membros!\n"
+"    Bem-vindo(a) como membro investidor oficial de %(coop_full_name)s! Ao "
+"subscrever %(num_shares)s ação(ões) da cooperativa,\n"
+"    decidiu moldar o sistema alimentar connosco e com muitos outros membros!"
+"\n"
 "    </p>\n"
 "    <p>\n"
-"        Temos muito gosto em confirmar a sua admissão à cooperativa com o número de membro %(owner_id)s. Consulte o PDF em anexo para todos os detalhes.\n"
+"        Temos muito gosto em confirmar a sua admissão à cooperativa com o "
+"número de membro %(owner_id)s. Consulte o PDF em anexo para todos os "
+"detalhes.\n"
 "    </p>\n"
 "    <p>\n"
-"        Se tiver perguntas, contacte o nosso Member Office (<a href=\"mailto: mitglied@supercoop.de\">mitglied@supercoop.de</a>).\n"
+"        Se tiver perguntas, contacte o nosso Member Office (<a href="
+"\"mailto: mitglied@supercoop.de\">mitglied@supercoop.de</a>).\n"
 "    </p>\n"
 "    <p>\n"
 "        Saudações cooperativas,<br />\n"
@@ -1611,6 +1750,7 @@ msgstr ""
 "        "
 
 #: coop/templates/coop/email/membershipresignation_confirmation_body.html:14
+#, fuzzy
 msgid ""
 "\n"
 "            <p>\n"
@@ -1621,13 +1761,14 @@ msgid ""
 msgstr ""
 "\n"
 "            <p>\n"
-"                Como indicou na sua carta de cancelamento que pretende transferir as suas ações para a SuperCoop,\n"
+"                Como na sua carta de cancelamento que pretende transferir as "
+"suas ações para a SuperCoop,\n"
 "                a sua cessação produz efeitos imediatos.\n"
 "            </p>\n"
 "        "
 
 #: coop/templates/coop/email/membershipresignation_confirmation_body.html:22
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "            <p>\n"
@@ -1639,7 +1780,8 @@ msgid ""
 msgstr ""
 "\n"
 "            <p>\n"
-"                Indicou na sua carta de cancelamento que pretende transferir as suas ações para outro membro. Informámos\n"
+"                Indicou na sua carta de cancelamento que pretende transferir "
+"as suas ações para outro membro. Informámos\n"
 "                %(transferred_member)s separadamente.\n"
 "                A sua cessação produz efeitos imediatos.\n"
 "            </p>\n"
@@ -1700,11 +1842,12 @@ msgid ""
 msgstr ""
 "\n"
 "            <p>\n"
-"                Desejamos-lhe tudo de bom para o futuro e, se tiver mais questões, não hesite em contactar o Member Office\n"
+"                Desejamos-te tudo de bom para o futuro e, se tiveres mais "
+"questões, não hesites em contactar o GTT-membros\n"
 "                (%(contact_email_address)s).\n"
 "            </p>\n"
 "            <p>Saudações cooperativas,</p>\n"
-"            <p>O Conselho da SuperCoop</p>\n"
+"            <p>Rizoma</p>\n"
 "        "
 
 #: coop/templates/coop/email/membershipresignation_confirmation_subject.html:4
@@ -1717,7 +1860,7 @@ msgstr ""
 "    Confirmação do cancelamento de adesão: %(share_owner_name)s\n"
 
 #: coop/templates/coop/email/membershipresignation_transferred_shares_confirmation_body.html:7
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Dear %(receiving_member)s,</p>\n"
@@ -1737,11 +1880,14 @@ msgstr ""
 "\n"
 "        <p>Caro(a) %(receiving_member)s,</p>\n"
 "        <p>\n"
-"            Boas notícias para si e, infelizmente, más notícias para nós!\n"
+"            Boas notícias para ti e, infelizmente, más notícias para nós!\n"
 "            <br>\n"
-"            %(resigning_member)s cancelou a sua adesão à SuperCoop Berlin eG e legou-lhe a(s) sua(s) ação(ões).\n"
-"            Não se surpreenda se vir subitamente mais ações na sua conta Tapir.\n"
-"            Se isto foi feito sem o seu consentimento, contacte o Member Office\n"
+"            %(resigning_member)s cancelou a sua adesão à SuperCoop Berlin eG "
+"e legou-lhe a(s) sua(s) ação(ões).\n"
+"            Não se surpreenda se vir subitamente mais ações na sua conta "
+"Tapir.\n"
+"            Se isto foi feito sem o seu consentimento, contacte o Member "
+"Office\n"
 "            (%(contact_email_address)s).\n"
 "        </p>\n"
 "        <p>Saudações cooperativas,</p>\n"
@@ -1758,7 +1904,7 @@ msgstr ""
 "    %(resigned_member_full)s legou-lhe a(s) sua(s) ação(ões) devido à sua demissão\n"
 
 #: coop/templates/coop/email/tapir_account_created.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Dear %(user_display_name)s,</p>\n"
@@ -1768,8 +1914,13 @@ msgid ""
 msgstr ""
 "\n"
 "        <p>Caro(a) %(user_display_name)s,</p>\n"
-"        <p>acabámos de criar uma conta para si no sistema de membros da SuperCoop. Aqui pode ver os seus próximos turnos, reservar um turno adicional ou marcar um turno como “à procura de substituto” (por exemplo, quando vai de férias). <br />\n"
-"            Consulte a secção III do <a href=\"https://wiki.supercoop.de/wiki/Member_Manual\">Manual do Membro</a> para mais informações sobre o sistema de substituições.</p>\n"
+"        <p>acabámos de criar uma conta para ti no sistema de membros da "
+"secção consumo da Rizoma. Aqui podes ver os teus próximos turnos, reservar "
+"um turno adicional ou cancelar um turno (por exemplo, quando vais de férias)"
+". <br />\n"
+"            Consulta o <a href="
+"\"https://wiki.supercoop.de/wiki/Member_Manual\">Manual </a> para mais "
+"informações sobre o sistema de turnos.</p>\n"
 "    "
 
 #: coop/templates/coop/email/tapir_account_created.body.html:14
@@ -1784,17 +1935,22 @@ msgstr ""
 "                "
 
 #: coop/templates/coop/email/tapir_account_created.body.html:19
+#, fuzzy
 msgid ""
 "\n"
 "                Flying members: Please keep in mind that you must have at least one shift “banked” for each shift cycle. For more information please see the <a href=\"https://wiki.supercoop.de/wiki/Member_Manual\">Member Manual</a> .\n"
 "            "
 msgstr ""
 "\n"
-"                Membros “voadores”: lembrem-se de que devem ter pelo menos um turno “em banco” por ciclo de turnos. Para mais informações, consultem o <a href=\"https://wiki.supercoop.de/wiki/Member_Manual\">Manual do Membro</a>.\n"
+"                Membros “flex”: lembrem-se de que devem ter pelo menos um "
+"turno “em crédito” por ciclo de turnos. Para mais informações, consultem o "
+"<a href=\"https://docs.google.com/document/d/"
+"1BxEWHsJ2y6o3c4z7a-ShwRXMXdQwx_BPOIfVB3igvwg/edit?tab=t.0#heading=h."
+"u0w1yfash11\">Manual </a>.\n"
 "            "
 
 #: coop/templates/coop/email/tapir_account_created.body.html:27
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "            <p>Your username is *%(username)s* . In order to login to your account, you first have to set a password : <a href=\"%(site_url)s%(password_reset_confirm_url)s\">Click here to set your password</a></p>\n"
@@ -1804,10 +1960,17 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"            <p>O seu nome de utilizador é *%(username)s*. Para iniciar sessão, primeiro tem de definir uma palavra-passe: <a href=\"%(site_url)s%(password_reset_confirm_url)s\">Clique aqui para definir a sua palavra-passe</a></p>\n"
-"            <p>Esta ligação é válida apenas por algumas semanas. Se expirar, pode gerar uma nova aqui: <a href=\"%(site_url)s%(password_reset_request_url)s\">Clique aqui para obter uma nova ligação</a></p>\n"
-"            <p>Também pode iniciar sessão na wiki da SuperCoop com esta conta.</p>\n"
-"            <p>Em alternativa, e para quaisquer questões, pode sempre contactar o <a href=\"https://wiki.supercoop.de/wiki/Mitgliederb%%C3%%BCro_-_Member_Office\">Member Office</a></p>\n"
+"            <p>O seu nome de utilizador é *%(username)s*. Para iniciar "
+"sessão, primeiro tem de definir uma palavra-passe: <a href="
+"\"%(site_url)s%(password_reset_confirm_url)s\">Clique aqui para definir a "
+"sua palavra-passe</a></p>\n"
+"            <p>Esta ligação é válida apenas por algumas semanas. Se expirar, "
+"pode gerar uma nova aqui: <a href="
+"\"%(site_url)s%(password_reset_request_url)s\">Clique aqui para obter uma "
+"nova ligação</a></p>\n"
+"            \n"
+"            <p>Em alternativa, e para quaisquer questões, pode sempre "
+"contactar o GTT-membros\n"
 "        "
 
 #: coop/templates/coop/email/tapir_account_created.body.html:35
@@ -1819,7 +1982,7 @@ msgid ""
 msgstr ""
 "\n"
 "            Cumprimentos cooperativos, <br />\n"
-"            A equipa do Member Office da SuperCoop Berlin.\n"
+"            A equipa do GTT-membros da Rizoma.\n"
 "        "
 
 #: coop/templates/coop/email/tapir_account_created.subject.html:2
@@ -2070,7 +2233,7 @@ msgid "Confirmation acquisition of additional shares in %(coop_full_name)s"
 msgstr "Confirmação da aquisição de ações adicionais em %(coop_full_name)s"
 
 #: coop/templates/coop/pdf/extra_shares_confirmation_pdf.default.html:66
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Dear %(display_name_short)s,</p>\n"
@@ -2108,19 +2271,23 @@ msgstr ""
 "\n"
 "        <p>\n"
 "            Obrigado pelo seu apoio!<br />\n"
-"            Este documento confirma que adquiriu %(num_shares)s ações adicionais.\n"
-"            Assim que o pagamento for recebido, esta informação será também refletida no seu perfil Tapir.\n"
+"            Este documento confirma que adquiriu %(num_shares)s ações "
+"adicionais.\n"
+"            Assim que o pagamento for recebido, esta informação será também "
+"refletida no seu perfil Tapir.\n"
 "        </p>\n"
 "\n"
 "        <p>\n"
 "            Lembrete: O seu número de membro é %(member_number)s.<br />\n"
-"            Este número é importante para a sua comunicação connosco e com o Member Office.\n"
+"            Este número é importante para a sua comunicação connosco e com o "
+"Member Office.\n"
 "            Guarde-o, pois irá precisar dele com frequência.\n"
 "        </p>\n"
 "\n"
 "        <p>\n"
 "            Se tiver alguma questão, contacte o Member Office\n"
-"            (<a href=\"mailto:%(contact_email_address)s\">%(contact_email_address)s</a>)\n"
+"            (<a href=\"mailto:%(contact_email_address)s\""
+">%(contact_email_address)s</a>)\n"
 "            e responderemos o mais rápido possível.\n"
 "        </p>\n"
 "\n"
@@ -2371,6 +2538,11 @@ msgstr "Criar uma nova pausa de adesão"
 msgid "Edit membership pause: %(name)s"
 msgstr "Editar pausa de adesão: %(name)s"
 
+#: coop/views/membership_resignation.py:112
+#, fuzzy
+msgid "Share(s) gifted {chr(8594)} SuperCoop"
+msgstr "Ação(ões) doadas {chr(8594)} SuperCoop"
+
 #: coop/views/membership_resignation.py:118
 msgid "Share(s) gifted"
 msgstr "Ação(ões) doadas"
@@ -2426,7 +2598,7 @@ msgstr "Está totalmente pago"
 
 #: coop/views/shareowner.py:664
 msgid "Name or member ID"
-msgstr "Nome ou ID de membro"
+msgstr "Nome ou ID do membro"
 
 #: coop/views/shareowner.py:668
 msgid "Is currently exempted from shifts"
@@ -2814,28 +2986,34 @@ msgstr "Calendário anual ABCD, semana atual: {current_week_group_name}"
 
 #: shifts/emails/flying_member_registration_reminder_email.py:17
 msgid "Flying member registration reminder"
-msgstr "Lembrete de registo para membro voador"
+msgstr "Lembrete de registo para membro flex"
 
 #: shifts/emails/flying_member_registration_reminder_email.py:22
 #, python-format
 msgid "Sent to flying members %(nb_days)s days after a cycle has begun, if they haven't registered to a shift for this cycle."
-msgstr "Enviado aos membros voadores %(nb_days)s dias após o início de um ciclo, se não se registaram em nenhum turno para esse ciclo."
+msgstr ""
+"Enviado aos membros flex %(nb_days)s dias após o início de um ciclo, se não "
+"se registaram em nenhum turno para esse ciclo."
 
 #: shifts/emails/freeze_warning_email.py:28
 msgid "Freeze warning"
-msgstr "Aviso de congelamento"
+msgstr "Aviso de suspensão"
 
 #: shifts/emails/freeze_warning_email.py:33
 msgid "Sent to a member when their shift status is not frozen yet but will be set to frozen if they don't register for make-up shifts."
-msgstr "Enviado a um membro quando o seu estado de turnos ainda não está congelado mas será congelado se não se inscrever em turnos de compensação."
+msgstr ""
+"Enviado a um membro quando o seu estado de turnos ainda não está suspenso "
+"mas será suspenso se não se inscrever em turnos de compensação."
 
 #: shifts/emails/member_frozen_email.py:23
 msgid "Shift status set to frozen"
-msgstr "Estado de turnos definido como congelado"
+msgstr "Estado de turnos definido como suspenso"
 
 #: shifts/emails/member_frozen_email.py:28
 msgid "Sent to a member when their shift status gets set to frozen. Usually happens if they miss to many shifts."
-msgstr "Enviado a um membro quando o seu estado de turnos passa a congelado. Normalmente acontece se faltar a demasiados turnos."
+msgstr ""
+"Enviado a um membro quando o seu estado de turnos passa a suspenso. "
+"Normalmente acontece se faltar a demasiados turnos."
 
 #: shifts/emails/shift_missed_email.py:22
 msgid "Shift missed"
@@ -2859,11 +3037,12 @@ msgstr "Enviado a um membro que procurava um substituto quando o respetivo slot 
 
 #: shifts/emails/unfreeze_notification_email.py:17
 msgid "Unfreeze Notification"
-msgstr "Notificação de descongelamento"
+msgstr "Notificação de suspensão"
 
 #: shifts/emails/unfreeze_notification_email.py:22
 msgid "Sent to a member when their shift status gets set from frozen to flying."
-msgstr "Enviado a um membro quando o seu estado de turnos passa de congelado a voador."
+msgstr ""
+"Enviado a um membro quando o seu estado de turnos passa de suspenso a flex."
 
 #: shifts/forms.py:60
 msgid "The shift must end after it starts."
@@ -3031,15 +3210,15 @@ msgstr "🏠 ABCD"
 
 #: shifts/models.py:992
 msgid "✈ Flying"
-msgstr "✈ Voador"
+msgstr "✈ Flex"
 
 #: shifts/models.py:993
 msgid "❄ Frozen"
-msgstr "❄ Congelado"
+msgstr "❄ Suspenso"
 
 #: shifts/models.py:1019
 msgid "Is frozen"
-msgstr "Está congelado"
+msgstr "Está suspenso"
 
 #: shifts/models.py:1198
 msgid "Cycle start date"
@@ -3066,6 +3245,7 @@ msgstr ""
 "                        "
 
 #: shifts/templates/shifts/cancel_shift.html:24
+#, fuzzy
 msgid ""
 "\n"
 "                            Cancelling a shift is used for example for holidays. It has the following consequences :\n"
@@ -3077,11 +3257,15 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"                            Cancelar um turno é usado, por exemplo, em feriados. Tem as seguintes consequências:\n"
+"                            Cancelar um turno tem as seguintes consequências:"
+"\n"
 "                            <ul>\n"
-"                                <li>Deixa de ser possível registar-se no turno.</li>\n"
-"                                <li>Os membros registados via turno ABCD recebem um ponto de turno.</li>\n"
-"                                <li>Os membros registados apenas para este turno não recebem ponto.</li>\n"
+"                                <li>Deixa de ser possível registar-se no "
+"turno.</li>\n"
+"                                <li>Os membros registados via turno ABCD "
+"recebem um ponto de turno.</li>\n"
+"                                <li>Os membros registados apenas para este "
+"turno não recebem ponto.</li>\n"
 "                            </ul>\n"
 "                        "
 
@@ -3114,7 +3298,7 @@ msgstr ""
 "                    "
 
 #: shifts/templates/shifts/email/flying_member_registration_reminder_email.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hi %(display_name_short)s,</p>\n"
@@ -3142,28 +3326,33 @@ msgstr ""
 "        <p>Olá %(display_name_short)s,</p>\n"
 "\n"
 "        <p>\n"
-"            Queríamos lembrar o seu próximo <a href=\"https://members.supercoop.de/shifts/calendar\">registo de turno</a>.\n"
+"            Queríamos relembrar-te do teu próximo <a href="
+"\"https://members.supercoop.de/shifts/calendar\">registo de turno</a>.\n"
 "        </p>\n"
 "        <p>\n"
-"            Um novo ciclo de turnos já decorre há uma semana e reparámos que ainda não se registou num turno adequado. Como membro voador,\n"
-"            ao contrário dos membros com turno ABCD regular, tem de tratar disto a cada quatro semanas.\n"
+"            Um novo ciclo de turnos já decorre há uma semana e reparámos que "
+"ainda não te registaste num turno. Como membro flex, e ao contrário dos "
+"membros com turno ABCD regular, tens de ser tu a marcar os teus turnos, a "
+"cada quatro semanas.\n"
 "        </p>\n"
 "        <p>\n"
-"            Veja o <a href=\"https://members.supercoop.de/shifts/calendar\">calendário de turnos no Tapir</a>\n"
-"            e registe-se num dos turnos assinalados a azul — é onde mais apoio é necessário de momento.\n"
+"            Vê o <a href=\"https://members.supercoop.de/shifts/calendar\""
+">calendário de turnos no Tapir</a>\n"
+"            e regista-se num dos turnos assinalados a azul — é onde mais "
+"apoio é necessário de momento.\n"
 "        </p>\n"
 "        <p>\n"
 "            Saudações cooperativas,<br />\n"
-"            O Member Office\n"
+"           GTT-membros\n"
 "        </p>\n"
 "    "
 
 #: shifts/templates/shifts/email/flying_member_registration_reminder_email.subject.html:2
 msgid "Sign up for your next SuperCoop shift"
-msgstr "Inscreva-se no seu próximo turno da SuperCoop"
+msgstr "Inscreve-te no teu próximo turno da Rizoma"
 
 #: shifts/templates/shifts/email/freeze_warning.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>\n"
@@ -3205,26 +3394,32 @@ msgstr ""
 "        <p>Olá %(display_name_short)s,</p>\n"
 "\n"
 "        <p>\n"
-"            Este é um e-mail automático de %(coop_name)s para informar que o seu registo de turnos atingiu %(account_balance)s.\n"
+"            Este é um e-mail automático de %(coop_name)s para informar que o "
+"teu registo de turnos atingiu %(account_balance)s.\n"
 "        </p>\n"
 "\n"
 "        <p>\n"
-"            Tem agora %(freeze_after_days)s dias para se inscrever nos turnos em atraso como turnos de compensação. Estes turnos\n"
+"            Tens agora %(freeze_after_days)s dias para te inscreveres nos "
+"turnos em atraso como turnos de compensação. Estes turnos\n"
 "            devem ocorrer nas próximas %(nb_weeks_in_the_future)s semanas.\n"
 "        </p>\n"
 "        <p>\n"
-"            Atenção: se não se inscrever nos turnos de compensação nos próximos %(freeze_after_days)s dias,\n"
-"            a sua conta será congelada. Isso significa que não poderá fazer compras nem votar nas assembleias gerais. Para\n"
-"            descongelar a conta, deve inscrever-se nos turnos em atraso.\n"
+"            Atenção: se não te inscreveres nos turnos de compensação nos "
+"próximos %(freeze_after_days)s dias,\n"
+"            a tua conta será suspensa. Isso significa que não poderás fazer "
+"compras. Para\n"
+"            reativar a conta, deves inscrever-te nos turnos em atraso.\n"
 "        </p>\n"
 "        <p>\n"
-"            Se for membro ABCD e não cumprir os turnos de compensação nem os regulares, será removido do seu turno ABCD.\n"
+"            Se fores membro ABCD e não cumprires os turnos de compensação "
+"nem os regulares, serás removido do teu turno ABCD.\n"
 "        </p>\n"
 "        <p>\n"
-"            Inscreva-se nos turnos em atraso o quanto antes. Para mais informações sobre o sistema de turnos,\n"
-"            consulte o <a href=\"%(url_member_manual)s\">Manual do Membro</a>.\n"
+"            Inscreve-te nos turnos em atraso o quanto antes. Para mais "
+"informações sobre o sistema de turnos,\n"
+"            consulta o <a href=\"%(url_member_manual)s\">Manual</a>.\n"
 "        </p>\n"
-"        <p>Obrigado!</p>\n"
+"        <p>Obrigada!</p>\n"
 "        <p>\n"
 "            Saudações cooperativas,<br />\n"
 "            O Member Office\n"
@@ -3241,7 +3436,7 @@ msgstr ""
 "    O seu registo de turnos atingiu %(account_balance)s turnos\n"
 
 #: shifts/templates/shifts/email/member_frozen.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hi %(display_name_short)s,</p>\n"
@@ -3273,22 +3468,28 @@ msgstr ""
 "\n"
 "        <p>Olá %(display_name_short)s,</p>\n"
 "        <p>\n"
-"            Este é um e-mail automático de %(coop_name)s para informar que a sua conta Tapir na SuperCoop foi temporariamente congelada.\n"
-"            Infelizmente, o seu registo de turnos esteve abaixo de %(freeze_threshold)s turnos por mais de %(freeze_after_days)s dias.\n"
+"            Este é um e-mail automático de %(coop_name)s para informar que a "
+"tua conta Tapir na Rizoma foi temporariamente suspensa.\n"
+"            Infelizmente, o teu registo de turnos esteve abaixo de "
+"%(freeze_threshold)s turnos por mais de %(freeze_after_days)s dias.\n"
 "        </p>\n"
-"        <p>Enquanto a conta estiver congelada, não pode fazer compras nem votar na Assembleia Geral.</p>\n"
+"        <p>Enquanto a conta estiver suspensa, não podes fazer compras na "
+"mercearia/rizobar.</p>\n"
 "        <p>\n"
-"            Para descongelar, inscreva-se nos turnos em atraso como turnos de compensação. Note que\n"
-"            estes turnos devem ocorrer nas próximas %(nb_weeks_in_the_future_for_make_up_shifts)s semanas.\n"
+"            Para reactivar a tua conta, inscreve-te nos turnos em atraso "
+"como turnos de compensação. Nota que\n"
+"            estes turnos devem ocorrer nas próximas "
+"%(nb_weeks_in_the_future_for_make_up_shifts)s semanas.\n"
 "        </p>\n"
 "        <p>\n"
-"            Inscreva-se o quanto antes. Para mais informações sobre o sistema de turnos,\n"
-"            consulte o <a href=\"%(url_member_manual)s\">Manual do Membro</a>.\n"
+"            Inscreve-te o quanto antes. Para mais informações sobre o "
+"sistema de turnos,\n"
+"            consulta o <a href=\"%(url_member_manual)s\">Manual</a>.\n"
 "        </p>\n"
 "        <p>Muito obrigado!</p>\n"
 "        <p>\n"
 "            Saudações cooperativas,<br />\n"
-"            O Member Office\n"
+"            GTT-membros\n"
 "        </p>\n"
 "    "
 
@@ -3298,10 +3499,10 @@ msgid ""
 "    Your Tapir account has been frozen\n"
 msgstr ""
 "\n"
-"    A sua conta Tapir foi congelada\n"
+"    A tua conta Tapir foi suspensa\n"
 
 #: shifts/templates/shifts/email/shift_missed.body.html:6
-#, python-format
+#, fuzzy, python-format
 msgid ""
 "\n"
 "        <p>Hi %(display_name_short)s,</p>\n"
@@ -3342,24 +3543,39 @@ msgstr ""
 "\n"
 "        <p>Olá %(display_name_short)s,</p>\n"
 "\n"
-"        <p>Este é um e-mail automático da SuperCoop.</p>\n"
+"        <p>Este é um e-mail automático da Rizoma.</p>\n"
 "\n"
 "        <p>\n"
-"            Foi registado no Tapir que não compareceu ao seguinte turno, apesar de estar registado: %(shift_display_name)s\n"
+"            Foi registado no Tapir que não compareceste ao seguinte turno, "
+"apesar de estares registade: %(shift_display_name)s\n"
 "        </p>\n"
 "        <p>\n"
-"            Se isto for um erro (por exemplo, se estava justificado), contacte o Member Office o mais rapidamente possível, respondendo a este e-mail.\n"
+"            Se isto for um erro (por exemplo, se estava justificado), "
+"contacta o GTT-membros o mais rapidamente possível, respondendo a este "
+"e-mail.\n"
 "        </p>\n"
 "        <p>\n"
-"            Para que o sistema funcione em caso de ausências, existe o sistema de substituições (interno). Isto alivia tanto a si como à sua equipa. Veja como funciona no\n"
-"            <a href=\"https://docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.lk042ux0tm9c.\">Manual do Membro</a>.\n"
-"            É sua responsabilidade procurar ativamente um substituto — incluindo marcar no Tapir e procurar via Slack, por exemplo.\n"
+"            Quando não podes comparecer num turno com menos de 6 horas de "
+"antecedência, é da tua responsabilidade encontrar alguém para te substituir, "
+"para garantir o bom funcionamento da mercearia, incluindo marcar no Tapir e "
+"procurar via Slack, por exemplo.  Podes consultar mais informações no \n"
+"            <a href=\"https://docs.google.com/document/d/"
+"19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit#heading=h.lk042ux0tm9c.\""
+">Manual</a>.\n"
+"\n"
 "        </p>\n"
 "        <p>\n"
-"            Regra geral, por cada turno falhado sem substituto, é necessário efetuar dois turnos de compensação. A sua conta Tapir tem agora uma nota sobre isto.\n"
+"            Regra geral, por cada turno falhado sem substituto, é necessário "
+"efetuar dois turnos de compensação. A tua conta Tapir tem agora uma nota "
+"sobre isto.\n"
 "        </p>\n"
 "        <p>\n"
-"            Inscreva-se nos turnos de compensação no Tapir dentro das próximas quatro semanas para equilibrar a conta. Caso contrário, os seus direitos de compra e voto poderão ser pausados até retomar o trabalho ativo (ver <a href=\"https://docs.google.com/document/d/19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit?pli=1#heading=h.lk042ux0tm9c\">Manual do Membro (Secção III.F)</a>).\n"
+"            Inscreva-se nos turnos de compensação no Tapir dentro das "
+"próximas quatro semanas para equilibrar a conta. Caso contrário, os teus "
+"direitos de compra poderão ser suspensos até retomares o trabalho activo ("
+"ver <a href=\"https://docs.google.com/document/d/"
+"19v91mj2MAJTtrPLCw54VMS6qlaiJqBqUAuiC6z_AKpw/edit?pli=1#heading=h."
+"lk042ux0tm9c\">Manual (Secção III.F)</a>).\n"
 "        </p>\n"
 "        <p>Obrigado pela compreensão.</p>\n"
 "        <p>\n"
@@ -3522,7 +3738,7 @@ msgid ""
 "    Your Tapir account has been unfrozen.\n"
 msgstr ""
 "\n"
-"    A sua conta Tapir foi descongelada.\n"
+"    A tua conta Tapir foi reativada.\n"
 
 #: shifts/templates/shifts/log/create_exemption_log_entry.html:2
 msgid "without end date"
@@ -3602,9 +3818,14 @@ msgid ""
 "                    "
 msgstr ""
 "\n"
-"                        <p>Um membro voador já se registou nos turnos abaixo.</p>\n"
-"                        <p>É ainda possível inscrever alguém neste turno via sistema ABCD. Isso significa que o membro se inscreve para trabalhar este turno de forma recorrente de 4 em 4 semanas (uma vez por ciclo).</p>\n"
-"                        <p>IMPORTANTE: Se um membro voador já se tinha inscrito para o mesmo turno, o membro ABCD terá de se inscrever noutro turno para esse ciclo.</p>\n"
+"                        <p>Um membro flex já se registou nos turnos "
+"abaixo.</p>\n"
+"                        <p>É ainda possível inscrever alguém neste turno via "
+"sistema ABCD. Isso significa que o membro se inscreve para fazer este turno "
+"de forma recorrente de 4 em 4 semanas (uma vez por ciclo).</p>\n"
+"                        <p>IMPORTANTE: Se um membro flex já se tinha "
+"inscrito para o mesmo turno, o membro ABCD terá de se inscrever noutro turno "
+"para esse ciclo.</p>\n"
 "                    "
 
 #: shifts/templates/shifts/register_user_to_shift_slot_template.html:42
@@ -3935,7 +4156,7 @@ msgstr "Isenções de turno"
 #: shifts/templates/shifts/shift_management.html:44
 #: shifts/templates/shifts/shift_management.html:54
 msgid "Update frozen statuses"
-msgstr "Atualizar estados congelados"
+msgstr "Atualizar estados suspensos"
 
 #: shifts/templates/shifts/shift_management.html:45
 msgid ""
@@ -3948,8 +4169,13 @@ msgid ""
 "                        "
 msgstr ""
 "\n"
-"<p>Para cada membro, verifica se deve ser colocado como congelado, descongelado, ou avisado de que será congelado em breve.</p>\n"
-"<p>Este comando é executado automaticamente uma vez por dia. Pode acioná-lo manualmente aqui para testes ou para acelerar uma atualização de estado.</p>"
+"                            <p>Para cada membro, verifica se deve ser "
+"colocado como suspenso, reativado, ou avisado de que será suspenso em "
+"breve.</p>\n"
+"<p>Este comando é executado automaticamente uma vez por dia. Pode acioná-lo "
+"manualmente aqui para testes ou para acelerar uma atualização de estado.</p>"
+"\n"
+"                        "
 
 #: shifts/templates/shifts/shift_management.html:60
 msgid "Generate shifts from ABCD shifts"
@@ -4432,7 +4658,7 @@ msgstr "Criar registo manual na conta de turnos para: %(link)s"
 
 #: shifts/views/views.py:367
 msgid "Frozen statuses updated."
-msgstr "Estados congelados atualizados."
+msgstr "Estados suspensos atualizados."
 
 #: statistics/apps.py:18
 msgid "Statistics"
@@ -4444,7 +4670,9 @@ msgstr "Membros ABCD"
 
 #: statistics/services/data_providers/data_provider_abcd_members.py:23
 msgid "Only members who work are counted: members that are exempted, paused, frozen... are not counted"
-msgstr "Apenas contam os membros que trabalham: isentos, em pausa, congelados… não são contabilizados"
+msgstr ""
+"Apenas contam os membros que trabalham: isentos, em ausência, suspensos… não "
+"são contabilizados"
 
 #: statistics/services/data_providers/data_provider_active_members.py:13
 msgid "Active members"
@@ -4452,7 +4680,9 @@ msgstr "Membros ativos"
 
 #: statistics/services/data_providers/data_provider_active_members.py:18
 msgid "Active in the sense of their membership: paused and investing members are not active, but frozen members are active"
-msgstr "Ativos no sentido da adesão: membros em pausa e investidores não são ativos, mas membros congelados são considerados ativos"
+msgstr ""
+"Ativos no sentido da adesão: membros em ausência temporária não são ativos, "
+"mas membros suspensos são considerados ativos"
 
 #: statistics/services/data_providers/data_provider_active_members_with_account.py:14
 msgid "Active members with Tapir account"
@@ -4485,7 +4715,9 @@ msgstr "Membros isentos"
 
 #: statistics/services/data_providers/data_provider_exempted_members.py:22
 msgid "Counting only members that would work if they were not exempted: frozen and investing members with an exemption are not counted."
-msgstr "Conta apenas membros que trabalhariam se não estivessem isentos: membros congelados e investidores com isenção não são contabilizados."
+msgstr ""
+"Conta apenas membros que trabalhariam se não estivessem isentos: membros "
+"suspensos não são contabilizados."
 
 #: statistics/services/data_providers/data_provider_exempted_members_that_work.py:14
 msgid "Exempted members that work"
@@ -4493,18 +4725,21 @@ msgstr "Membros isentos que trabalham"
 
 #: statistics/services/data_providers/data_provider_exempted_members_that_work.py:19
 msgid "Counting all exempted members (ignoring if they are frozen or investing) that actually did a shift in the past 60 days. Just registering to the shift doesn't count, the attendance must be confirmed."
-msgstr "Conta todos os membros isentos (ignorando se estão congelados ou são investidores) que efetivamente fizeram um turno nos últimos 60 dias. Só registar não conta; a presença tem de ser confirmada."
+msgstr ""
+"Conta todos os membros isentos (ignorando se estão suspensos) que "
+"efetivamente fizeram um turno nos últimos 60 dias. O registo no turno não "
+"conta; a presença tem de ser confirmada."
 
 #: statistics/services/data_providers/data_provider_flying_members.py:21
 msgid "Flying members"
-msgstr "Membros voadores"
+msgstr "Membros flex"
 
 #: statistics/services/data_providers/data_provider_frozen_members.py:16
 #: statistics/templates/statistics/main_statistics.html:118
 #: statistics/templates/statistics/main_statistics.html:129
 #: statistics/views/main_view.py:392
 msgid "Frozen members"
-msgstr "Membros congelados"
+msgstr "Membros suspensos"
 
 #: statistics/services/data_providers/data_provider_frozen_members.py:21
 msgid "Counted out of 'active' members: paused and investing members not counted."
@@ -4512,11 +4747,13 @@ msgstr "Contados dentro dos ‘ativos’: membros em pausa e investidores não s
 
 #: statistics/services/data_providers/data_provider_frozen_members_long_term.py:17
 msgid "Long-term frozen members"
-msgstr "Membros congelados de longa duração"
+msgstr "Membros suspensos de longa duração"
 
 #: statistics/services/data_providers/data_provider_frozen_members_long_term.py:22
 msgid "Members that are frozen since more than 180 days (roughly 6 month). Long-term frozen members are included in the \"Frozen members\" dataset"
-msgstr "Membros congelados há mais de 180 dias (cerca de 6 meses). Estão incluídos no conjunto “Membros congelados”"
+msgstr ""
+"Membros suspensos há mais de 180 dias (cerca de 6 meses). Estão incluídos no "
+"conjunto “Membros suspensos”"
 
 #: statistics/services/data_providers/data_provider_investing_members.py:13
 msgid "Investing members"
@@ -4549,7 +4786,9 @@ msgstr "Membros com direito a compras"
 
 #: statistics/services/data_providers/data_provider_purchasing_members.py:19
 msgid "Members who are allowed to shop. To be allowed to shop, a member must be active (see the description for \"Active members\"), have a Tapir account, and not be frozen."
-msgstr "Membros com direito a compras. Para tal, o membro deve ser ativo (ver “Membros ativos”), ter conta Tapir e não estar congelado."
+msgstr ""
+"Membros com direito a compras. Para tal, o membro deve ser ativo (ver “"
+"Membros ativos”), ter conta Tapir e não estar suspenso."
 
 #: statistics/services/data_providers/data_provider_resignations_created.py:13
 msgid "Created resignations"
@@ -4573,7 +4812,9 @@ msgstr "Parceiros de turno"
 
 #: statistics/services/data_providers/data_provider_shift_partners.py:23
 msgid "Counted out of working members only: a frozen member with a shift partner is not counted"
-msgstr "Contados apenas entre os membros que trabalham: um membro congelado com parceiro de turno não é contabilizado"
+msgstr ""
+"Contados apenas entre os membros que trabalham: um membro suspenso com "
+"parceiro de turno não é contabilizado"
 
 #: statistics/services/data_providers/data_provider_total_members.py:13
 msgid "Total members"
@@ -4664,12 +4905,16 @@ msgid ""
 msgstr ""
 "\n"
 "                                <p>\n"
-"                                    Todos os membros trabalhadores e todos os com isenção (licença parental,\n"
-"                                    mais de 70, etc.). Membros congelados (que ainda não marcaram turnos de compensação)\n"
-"                                    ou em pausa (ausência de 3 ciclos de turnos ou mais) não têm direito a compras.\n"
+"                                    Todos os membros trabalhadores e todos "
+"os com isenção (licença parental,\n"
+"                                    mais de 65, etc.). Membros suspensos ("
+"que ainda não marcaram turnos de compensação)\n"
+"                                    ou em ausência temporária (ausência de 3 "
+"ciclos de turnos ou mais) não têm direito a compras.\n"
 "                                </p>\n"
 "                                <p>\n"
-"                                    Número-alvo de membros com compras para o break-even: %(target_count)s.\n"
+"                                    Número-alvo de membros com compras para "
+"o break-even: %(target_count)s.\n"
 "                                </p>\n"
 "                            "
 
@@ -4688,9 +4933,12 @@ msgid ""
 "                            "
 msgstr ""
 "\n"
-"                                Membros trabalhadores são membros ativos sem isenção. Exemplos de isenção: um ano de\n"
-"                                licença parental, doença prolongada ou membros com mais de 70 anos.\n"
-"                                Número necessário de membros trabalhadores para preencher todos os turnos: %(target_count)s.\n"
+"                                Membros trabalhadores são membros ativos sem "
+"isenção. Exemplos de isenção: \n"
+"                                licença parental, doença ou membros com mais "
+"de 65 anos.\n"
+"                                Número necessário de membros trabalhadores "
+"para preencher todos os turnos: %(target_count)s.\n"
 "                            "
 
 #: statistics/templates/statistics/main_statistics.html:122
@@ -5799,7 +6047,7 @@ msgstr "NOME INDISPONÍVEL"
 #: welcomedesk/apps.py:21 welcomedesk/apps.py:24
 #: welcomedesk/templates/welcomedesk/welcome_desk_search.html:14
 msgid "Welcome Desk"
-msgstr "Welcome Desk"
+msgstr ""
 
 #: welcomedesk/services/welcome_desk_reasons_cannot_shop_service.py:44
 #, python-format
@@ -5814,7 +6062,9 @@ msgstr "%(name)s é um membro investidor. Se quiser fazer compras, tem de se tor
 #: welcomedesk/services/welcome_desk_reasons_cannot_shop_service.py:51
 #, python-format
 msgid "%(name)s has been frozen because they missed too many shifts.If they want to shop, they must first be re-activated.Contact a member of the management team."
-msgstr "%(name)s foi colocado em estado congelado por faltar a demasiados turnos. Se quiser fazer compras, tem de ser reativado primeiro. Contacte um membro da equipa de gestão."
+msgstr ""
+"%(name)s foi colocado em estado suspenso por faltar a demasiados turnos. Se "
+"quiser fazer compras, tem de ser reativado primeiro. Contacta o GTT-membros."
 
 #: welcomedesk/services/welcome_desk_reasons_cannot_shop_service.py:56
 #, python-format
@@ -5830,26 +6080,3 @@ msgstr "%(name)s não é membro da cooperativa. Pode ter transferido as suas aç
 #, python-format
 msgid "%(name)s has not attended a welcome session yet. Make sure they plan to do it!"
 msgstr "%(name)s ainda não participou numa sessão de boas-vindas. Certifique-se de que planeiam fazê-lo!"
-
-#~ msgid "Share(s) gifted {chr(8594)} SuperCoop"
-#~ msgstr "Ação(ões) doadas {chr(8594)} SuperCoop"
-
-#, python-brace-format
-#~ msgid "Sent to a member {config.REMINDER_EMAIL_DAYS_BEFORE_SHIFT} days before their shift"
-#~ msgstr "Enviado a um membro {config.REMINDER_EMAIL_DAYS_BEFORE_SHIFT} dias antes do seu turno"
-
-#, python-brace-format
-#~ msgid "The selected user is missing the required qualification for this shift : {missing_capabilities}"
-#~ msgstr "O utilizador selecionado não possui a qualificação necessária para este turno: {missing_capabilities}"
-
-#, python-brace-format
-#~ msgid "{own_name} is already partner of {partner_of_name}, they can't have a partner of their own"
-#~ msgstr "{own_name} já é parceiro de {partner_of_name}, não pode ter um parceiro próprio"
-
-#, python-brace-format
-#~ msgid "The member will be unregistered from the following shifts because they are within the range of the exemption : {attendances_display}"
-#~ msgstr "O membro será removido dos seguintes turnos por estarem dentro do período da isenção: {attendances_display}"
-
-#, python-brace-format
-#~ msgid "Unknown mode {attendance_mode}"
-#~ msgstr "Modo desconhecido {attendance_mode}"
