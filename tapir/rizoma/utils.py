@@ -1,6 +1,6 @@
 from tapir.shifts.models import ShiftSlot
 from tapir.shifts.models import ShiftAttendance
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 from tapir.shifts.templatetags.shifts import sort_slots_by_name
 from tapir.shifts.templatetags.shifts import get_html_classes_for_filtering
 from tapir.shifts.templatetags.shifts import template_group_name_to_character

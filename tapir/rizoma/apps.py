@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 from tapir.core.config import sidebar_link_groups
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 from django.urls import reverse_lazy
 from tapir.settings import PERMISSION_COOP_ADMIN
 

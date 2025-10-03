@@ -7,7 +7,7 @@ from collections import OrderedDict
 from tapir.shifts.models import Shift
 from tapir.shifts.models import ShiftSlot
 from tapir.shifts.templatetags.shifts import shift_name_as_class
-from django.utils.translation import gettext as _
+from django.utils.translation import gettext_lazy as _
 from tapir.rizoma.utils import format_shift_for_template
 
 from datetime import date, timedelta
@@ -35,7 +35,7 @@ class RizomaAllShiftsView(LoginRequiredMixin, TemplateView):
                     self.request.GET["date_to"], self.DATE_FORMAT
                 ).date()
                 if "date_to" in self.request.GET.keys()
-                else date_from + datetime.timedelta(days=60)
+                else date_from + datetime.timedelta(days=7)
             )
         except:
             date_from = timezone.now().date()
